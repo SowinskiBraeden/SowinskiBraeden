@@ -5,7 +5,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
-const PORT = 8080
+const PORT = 3000
 const server = app.listen(PORT, function () {
 	console.log('Server started.', server.address());
 });
