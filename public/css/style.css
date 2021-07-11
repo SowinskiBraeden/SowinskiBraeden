@@ -45,6 +45,9 @@ body {
   font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 body.js-stop-transition * { transition:none !important; }
+a:hover {
+  cursor: pointer;
+}
 a,body,h1{
   color:var(--primary);
 }
