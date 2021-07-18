@@ -1,7 +1,11 @@
 const express = require('express');
+const secure = require('ssl-express-www');
 const path = require('path');
 const cons = require('consolidate');
 const app = express();
+
+// User ssl-express-www to redirect http to https
+app.use(secure);
 
 // view engine setup
 app.engine('html', cons.swig)
