@@ -5,6 +5,9 @@ module.exports = function (app) {
   app.get('/about', function (req, res) {
     res.render('about');
   });
+  app.get('/projects', function (req, res) {
+    res.render('projects');
+  });
   //The 404 Route (ALWAYS Keep this as the last route)
   app.get('*', function(req, res){
     res.status(404).render('page-not-found');

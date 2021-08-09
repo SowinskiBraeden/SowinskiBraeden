@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#"
+      lang='en'>
   <head>
-    <title>Braeden Sowinski - About</title>
+    <title>Braeden Sowinski - Projects</title>
     <meta name='description' content="Personal Website for Breaden Sowinski (McDazzzled)" />
     <meta name='author' content="Braeden Sowinski" />
     <meta name='keywords' content="Braeden Sowinski, McDazzzled" />
@@ -65,48 +67,28 @@
       </nav>
     </header>
 
-    <!-- About Body -->
-    <div class="about-section">
-      <div class="inner-container">
-        <h1 id="about-me">About Me</h1>
-        <p class="text">
-          My name is <strong>Braeden Sowinski</strong> (McDazzzled), I am a Software Developer for website 
-          or desktop applications. Languages I am proficient in are Python and Javascript. On the other 
-          hand I know the three C languages, Java, and GoLang. I am willing to help contribute to almost 
-          any project and enjoy solving problems. I am more of a back-end developer seeking to write the 
-          logic of software. I possess the ability to work with datavases such as MongoDB. Feel free to 
-          contact me on Discord, Twitter, or via email. 
-        </p>
-        <div class="skills">
-          <span>Node JS</span>
-          <span>Python</span>
-          <span>Java</span>
-        </div>
-      </div>
-    </div>
-
     <!-- Disable transitions on webpage load -->
     <script>document.body.classList.remove('js-stop-transition')</script>
 
     <!-- Change Theme Scripts -->
     <script type="text/javascript">
-      document.getElementById("theme-toggle").addEventListener("click", () => {
-        document.body.className.includes("dark")?(document.body.classList.remove('dark'),
-        localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
-        localStorage.setItem("pref-theme",'dark')),
-        "dark"==sessionStorage.getItem("theme")?sessionStorage.setItem("theme","light"):sessionStorage.setItem("theme","dark");
-      });
-  </script>
-  <script>
-    // If storage is supported set theme to dark by default
-    if (typeof(Storage) !== "undefined") {
-      if (sessionStorage.getItem("theme")==null||sessionStorage.getItem("theme")==undefined) sessionStorage.setItem("theme", "dark");
-      if (sessionStorage.getItem("theme")=='light') {
-        document.body.className.includes("dark")?(document.body.classList.remove('dark'),
-        localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
-        localStorage.setItem("pref-theme",'dark'));
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+          document.body.className.includes("dark")?(document.body.classList.remove('dark'),
+          localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
+          localStorage.setItem("pref-theme",'dark')),
+          "dark"==sessionStorage.getItem("theme")?sessionStorage.setItem("theme","light"):sessionStorage.setItem("theme","dark"); 
+        });
+    </script>
+    <script>
+      // If storage is supported set theme to dark by default
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.getItem("theme")==null||sessionStorage.getItem("theme")==undefined) sessionStorage.setItem("theme", "dark");
+        if (sessionStorage.getItem("theme")=='light') {
+          document.body.className.includes("dark")?(document.body.classList.remove('dark'),
+          localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
+          localStorage.setItem("pref-theme",'dark'));
+        }
       }
-    }
-  </script>
+    </script>
   </body>
 </html>
