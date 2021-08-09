@@ -12,6 +12,7 @@ app.set('view engine', 'html');
 app.use(redirectSSL.create({
 	exclude: ['localhost']
 }));
+
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 8000;
