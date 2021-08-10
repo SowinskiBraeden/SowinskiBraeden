@@ -12,7 +12,6 @@
     <link rel="icon" type="image/png" href="/static/images/profile.ico"/>
 
     <!-- Load CSS -->
-    <!-- <link rel='stylesheet' href='/static/css/css.css'> -->
     <link rel="stylesheet" href="/static/css/style.css">
   </head>
   <body class="js-stop-transition">
@@ -53,19 +52,54 @@
           </span>
         </div>
         <ul id=menu>
-          <li>
+          <li id="home-link">
             <a href="/" title="Home">
-              <span class=active>Home</span>
+              <span class="active">Home</span>
             </a>
           </li>
-          <li>
+          <li id="about-link">
             <a href="/about" title="about">
-              <span>About</span>
+              <span class="active">About</span>
+            </a>
+          </li>
+          <li id="projects-link">
+            <a href="/projects" title="projects">
+              <span class="active">Projects</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <div id="side-menu" class="side-menu">
+      <ul>
+        <li><a id="main-screen" class="side-menu-btn" href="#showcase-info">Main Screen</a></li>
+        <li><a class="side-menu-btn" href="#contributions">Contributions</a></li>
+        <li><a class="side-menu-btn" href="#proud">Proud Projects</a></li>
+        <li><a class="side-menu-btn" href="#interesting">Interesting Projects</a></li>
+      </ul>
+    </div>
+    <div id="showcase-info" class="showcase-info">
+      <div class="svg-wrapper">
+        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0"class="shape" height="60" width="320"/>
+          <h1 style="text-align: center; margin-top: 2px;" class="name">COMING SOON</h1>
+        </svg>
+      </div>
+      <p class="temp">
+        Here will contain several sections showing projects Im proud of, 
+        are interestings, and open source projects I have contributed to.
+      </p>
+    </div>
+    <div id="contributions" class="showcase-info">
+
+    </div>
+    <div id="proud" class="showcase-info">
+
+    </div>
+    <div id="interesting" class="showcase-info">
+
+    </div>
 
     <!-- Disable transitions on webpage load -->
     <script>document.body.classList.remove('js-stop-transition')</script>
@@ -89,6 +123,22 @@
           localStorage.setItem("pref-theme",'dark'));
         }
       }
+    </script>
+    <script>
+      // Add active class to the current button (highlight it)
+      let header = document.getElementById("side-menu");
+      let btns = header.getElementsByClassName("side-menu-btn");
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          let current = document.getElementsByClassName("side-active");
+          if (current.length > 0) { 
+            current[0].className = current[0].className.replace(" side-active", "");
+          }
+          this.className += " side-active";
+        });
+      }
+      // Select starting screen (Main Screen)
+      document.getElementById("main-screen").click();
     </script>
   </body>
 </html>

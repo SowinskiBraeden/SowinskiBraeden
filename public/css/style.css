@@ -5,6 +5,7 @@
   --accent: #ff005a;
   --panel: rgba(216, 216, 217);
   --panel-text: #303030;
+  --menu-text-bg: #303030;
   --not-found: #030005;
 }
 /* 
@@ -19,6 +20,7 @@
   --accent: #ff005a;
   --panel: #303030;
   --panel-text: rgba(216, 216, 217);
+  --menu-text-bg: #9e9e9e;
   --not-found: #303030;
 }
 *,::after,::before{
@@ -60,15 +62,19 @@ ul{
 ul li::before{
   content: '';
   position: absolute;
-  top: 5%;
+  margin-top: 42px;
   width: 0;
   background-color: var(--secondary);
   z-index: 9999;
   height: 3px;
   transition: 0.8s all;
 }
-ul li:hover::before {
+ul li#home-link:hover::before,
+ul li#about-link:hover::before {
   width: 45px;
+}
+ul li#projects-link:hover::before {
+  width: 58px;
 }
 a {
   transition: 0.8s;
@@ -129,6 +135,34 @@ body,ul{
 #menu .active{
   font-weight:500;
 }
+.side-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: var(--theme);
+  transition: 0.8s;
+}
+.side-menu-btn {
+  display: block;
+  color: var(--primary);
+  padding: 8px 16px;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  margin: 1em;
+  color: var(--primary);
+  font-weight: 700;
+  position: relative;
+}
+.side-menu-btn:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+.side-active {
+  color: var(--primary);
+  background-color: var(--menu-text-bg);
+}
 .main {
   text-align: center;
   position: absolute;
@@ -139,10 +173,33 @@ body,ul{
   padding: 10px;
   color: var(--primary);
 }
+.svg-wrapper {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+  height: 64px;
+  overflow-y: hidden;
+}
+.shape {
+  z-index: 9999;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: var(--secondary);
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
 .name {
   transition: 0.8s;
   font-size: 30px;
   font-weight: 900;
+  margin-bottom: 10px;
+  transform: translate(0, -64px);
 }
 .name:hover {
   color: var(--secondary);
@@ -161,11 +218,6 @@ body,ul{
   height: 128px;
   border-radius: 50%;
   transition: 0.8s;
-}
-.profile:hover {
-  width: 150px;
-  height: 150px;
-  cursor: default;
 }
 .social-icons {
   padding:12px 0;
@@ -400,4 +452,20 @@ body:not(.dark) #sun{
   .terms-tags a:active,.button:active,.share-buttons svg:active,.post-entry:active,.top-link,#searchResults .focus,#searchResults li:active{
       transform:none;
   }
+}
+
+/* Temp */
+.temp {
+  color: var(--primary);
+  transition: .8s;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 480px;
+  margin-top: 3px;
+  font-weight: 500;
+  text-align: center;
+}
+.temp:hover {
+  cursor: default;
 }

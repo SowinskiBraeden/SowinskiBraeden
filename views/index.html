@@ -53,14 +53,19 @@
           </span>
         </div>
         <ul id=menu>
-          <li>
+          <li id="home-link">
             <a href="/" title="Home">
-              <span class=active>Home</span>
+              <span class="active">Home</span>
             </a>
           </li>
-          <li>
+          <li id="about-link">
             <a href="/about" title="about">
-              <span>About</span>
+              <span class="active">About</span>
+            </a>
+          </li>
+          <li id="projects-link">
+            <a href="/projects" title="projects">
+              <span class="active">Projects</span>
             </a>
           </li>
         </ul>
@@ -70,7 +75,12 @@
     <!-- Main Body / Welcome Section -->
     <div class="main">
       <img src="/static/images/profile.gif" class="profile">
-      <h1 class="name">Braeden Sowinski</h1>
+      <div class="svg-wrapper">
+        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0"class="shape" height="60" width="320"/>
+          <h2 style="margin-top: 2px;" class="name">Braeden Sowinski</h2>
+        </svg>
+      </div>
       <span class="des">Freelance Development && Open Source Contributor</span>
       <div class="social-icons">
         <a class="icon" href=https://steamcommunity.com/profiles/76561199026616271/ target=_blank rel="noopener noreferrer me" title=Steam>
