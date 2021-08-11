@@ -520,7 +520,7 @@ body:not(.dark) #sun{
 }
 @media only screen and (max-width: 514px) {
   .nav__links li a,
-  .svg-wrapper {
+  .svg-wrapper#main-wrapper {
     display: none;
   }
   .menu,
