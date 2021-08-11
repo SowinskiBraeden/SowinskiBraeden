@@ -52,7 +52,7 @@
             </button>
           </span>
         </div>
-        <ul id=menu>
+        <ul id="menu" class="nav__links">
           <li id="home-link">
             <a href="/" title="Home">
               <span class="active">Home</span>
@@ -69,7 +69,23 @@
             </a>
           </li>
         </ul>
+        <p class="menu cta">Menu</p>
       </nav>
+
+      <!-- Moble Nav Menu -->
+      <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+          <a href="/" title="Home">
+            <span class="active">Home</span>
+          </a>
+          <a href="/about" title="about">
+            <span class="active">About</span>
+          </a>
+          <a href="/projects" title="projects">
+            <span class="active">Projects</span>
+          </a>
+      </div>
     </header>
 
     <!-- Main Body / Welcome Section -->
@@ -81,6 +97,7 @@
           <h2 style="margin-top: 2px;" class="name">Braeden Sowinski</h2>
         </svg>
       </div>
+      <h2 style="margin-top: 2px;" class="mobile-name">Braeden Sowinski</h2>
       <span class="des">Freelance Development && Open Source Contributor</span>
       <div class="social-icons">
         <a class="icon" href=https://steamcommunity.com/profiles/76561199026616271/ target=_blank rel="noopener noreferrer me" title=Steam>
@@ -117,17 +134,20 @@
         </a>
     </div>
 
+    <!-- Import Mobile.js for mobile nav menu -->
+    <script src="/static/scripts/mobile.js"></script>
+
     <!-- Disable transitions on webpage load -->
     <script>document.body.classList.remove('js-stop-transition')</script>
 
     <!-- Change Theme Scripts -->
     <script type="text/javascript">
-        document.getElementById("theme-toggle").addEventListener("click", () => {
-          document.body.className.includes("dark")?(document.body.classList.remove('dark'),
-          localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
-          localStorage.setItem("pref-theme",'dark')),
-          "dark"==sessionStorage.getItem("theme")?sessionStorage.setItem("theme","light"):sessionStorage.setItem("theme","dark"); 
-        });
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        document.body.className.includes("dark")?(document.body.classList.remove('dark'),
+        localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),
+        localStorage.setItem("pref-theme",'dark')),
+        "dark"==sessionStorage.getItem("theme")?sessionStorage.setItem("theme","light"):sessionStorage.setItem("theme","dark"); 
+      });
     </script>
     <script>
       // If storage is supported set theme to dark by default

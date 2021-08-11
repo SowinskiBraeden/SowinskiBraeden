@@ -388,6 +388,71 @@ body:not(.dark) #sun{
   font-weight: 700;
   font-size: 13px;
 }
+
+/* Mobile Nav */
+.cta {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.8s;
+  position: absolute;
+  right: 14%;
+}
+.menu {
+  display: none;
+  color: var(--primary);
+  size: 125%;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+.overlay--active {
+  width: 100%;
+}
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overlay a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--secondary);
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+.mobile-name {
+  display: none;
+  transition: 0.8s;
+  font-size: 30px;
+  font-weight: 900;
+}
+.mobile-name:hover {
+  color: var(--secondary);
+  cursor: default;
+}
 @media screen and (max-width:1200px){
   .inner-container{
       padding: 80px;
@@ -453,18 +518,27 @@ body:not(.dark) #sun{
       transform:none;
   }
 }
-
+@media only screen and (max-width: 514px) {
+  .nav__links li a,
+  .svg-wrapper {
+    display: none;
+  }
+  .menu,
+  .mobile-name {
+    display: block;
+  }
+}
 /* Temp */
 .temp {
   color: var(--primary);
   transition: .8s;
+  margin-top: 3px;
+  font-weight: 500;
+  max-width: 480px;
+  text-align: center;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  max-width: 480px;
-  margin-top: 3px;
-  font-weight: 500;
-  text-align: center;
 }
 .temp:hover {
   cursor: default;
