@@ -213,6 +213,9 @@ body,ul{
   color: var(--secondary);
   cursor: default;
 }
+.des:focus {
+  color: var(--secondary);
+}
 .profile {
   width: 128px;
   height: 128px;
