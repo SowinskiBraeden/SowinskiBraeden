@@ -11,17 +11,17 @@ module.exports = function (app) {
     res.render('projects');
   });
 
-  //The 404 Route (ALWAYS Keep this as the last route)
-  app.get('*', (req, res) => {
-    res.status(404).render('page-not-found');
-  });
-
   /*
     My Domain provider redirects to defaultsite
     when accessing the http site.
     This will redirect back to home page.  
   */
-  app.get('/defaultsite', (req, res) => {
-    res.redirect('/');
+    app.get('/defaultsite', (req, res) => {
+      res.redirect('/');
+    });
+
+  //The 404 Route (ALWAYS Keep this as the last route)
+  app.get('*', (req, res) => {
+    res.status(404).render('page-not-found');
   });
 }
