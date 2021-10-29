@@ -9,10 +9,10 @@ app.engine('html', cons.swig)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
-if (process.env.NODE_ENV === 'production') {
-	// If not local host use redirectSSL
-	app.use(redirectSSL.create());
-}
+// if (process.env.NODE_ENV === 'production') {
+// 	// If not local host use redirectSSL
+// 	app.use(redirectSSL.create());
+// }
 
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
