@@ -1,6 +1,6 @@
 ### Hi there, I'm Braeden Sowinski - aka [McDazzzled][website] 👋
 
-[![Website](https://img.shields.io/website?label=www.mcdazzzled.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://mcdazzzled.com)
+[![Website](https://img.shields.io/website?label=mcdazzzled.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://mcdazzzled.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BraedenSowinski?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw)
 
 ## I'm a Student Developer!!
