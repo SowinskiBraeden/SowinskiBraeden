@@ -25,8 +25,8 @@
     -->
     
     <header class=header>
-    <nav class=nav>
-      <div class=logo>
+      <nav class=nav>
+        <div class=logo>
           <a href="/" title="McDazzzled (Alt + H)">
             <img src=./public/images/profile.png alt=logo style="border-radius:50%;" aria-label=logo height=32>McDazzzled
           </a>
@@ -85,60 +85,58 @@
       </div>
     </header>
 
-    <div class="projects">
+    <section class="card-body">
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Open Source</h3>
+              <p>
+                <strong style="color:#eb5234;">Lines Police CAD</strong> is a website service built with Node.js using the Express.js and
+                MongoDB frameworks. With over 52.1k users, I have contributed new features for people 
+                to use on the service.</p>
+              <a href="https://www.linespolice-cad.com/" target="_blank">View LPC</a>
+              <a href="https://github.com/SowinskiBraeden/police-cad" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
       
-      <div class="project-panel">
-        <div class="project-panel-content">
-          <h2>Open Source Contributions</h2>
-          <br>
-          <p>
-            An open source project I have contributed to is the 
-            <a href="https://www.linespolice-cad.com/" target="_blank">Lines Police CAD</a> website service. 
-            This project is Node.js based and uses the Express.js framework. It utilizes the 
-            MongoDB service for its 52.1k users. I have contributed new features for people 
-            to use on the service.
-          </p>
-          <br>
-          <p>Lines Police CAD on <a href="https://github.com/LinesMerrill/police-cad" target="_blank">Github</a></p>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Proud Projects</h3>
+              <p>
+                I'm proud of my XP-System project, enableing a teacher create assignments for classes. 
+                Students can view and earn XP for those assignments, unlocking different levels to 
+                compare with peers.
+              </p>
+              <a href="https://github.com/SowinskiBraeden/XP-System" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>03</h2>
+              <h3>Interesting Work</h3>
+              <p>
+                I am a verified Discord Bot Developer, I have developed Discord integration for the 
+                Lines Police CAD websute. Allowing users to quickly use websute features right in 
+                their Discord Servers.
+              </p>
+              <a href="https://github.com/SowinskiBraeden/LPC-Bot" target="_blank">Github</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="project-panel">
-        <div class="project-panel-content">
-          <h2>Proud Projects</h2>
-          <br>
-          <p>
-            One Project I am proud of is my XP-System, it helps a teacher create new assignments 
-            for classes, students can view those assignments. The student can earn XP that unlocks
-            different levels to compare with your peers and gives a basic understanding of your progress. Students 
-            are not limited to classes, they can view any assignment for any class, so their creativity 
-            and curiosity is not limited.
-          </p>
-          <br>
-          <p>XP-System on <a href="https://github.com/SowinskiBraeden/XP-System" target="_blank">Github</a></p>
-        </div>
-      </div>
-
-      <div class="project-panel">
-        <div class="project-panel-content">
-          <h2>Interesting Work</h2>
-          <br>
-          <p>
-            I am a verified Discord Bot Developer. I have made Discord Integration for the Lines Police 
-            CAD website. The Discord Bot allows users to use website features right in their Discord 
-            Server, the Discord Bot grew so large it is now verified on Discord! I will be continuing 
-            to manage and develope the LPC Bot as well as the Lines Police CAD website.
-          </p>
-          <br>
-          <p>LPC Discord Bot on <a href="https://github.com/SowinskiBraeden/LPC-Bot" target="_blank">Github</a></p>
-        </div>
-      </div>
-
-    </div>
+    </section>
 
     <!-- Import Mobile.js for mobile nav menu -->
     <script src="./public/scripts/mobile.js"></script>
-    
+  
     <!-- Disable transitions on webpage load -->
     <script>document.body.classList.remove('js-stop-transition')</script>
 
@@ -161,22 +159,6 @@
           localStorage.setItem("pref-theme",'dark'));
         }
       }
-    </script>
-    <script>
-      // Add active class to the current button (highlight it)
-      let header = document.getElementById("side-menu");
-      let btns = header.getElementsByClassName("side-menu-btn");
-      for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          let current = document.getElementsByClassName("side-active");
-          if (current.length > 0) { 
-            current[0].className = current[0].className.replace(" side-active", "");
-          }
-          this.className += " side-active";
-        });
-      }
-      // Select starting screen (Main Screen)
-      document.getElementById("main-screen").click();
     </script>
   </body>
 </html>
