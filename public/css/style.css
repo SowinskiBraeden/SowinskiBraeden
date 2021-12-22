@@ -354,7 +354,7 @@ body:not(.dark) #sun{
 .about-section{
   transition: 0.8s;
   border-top-right-radius: 15px;
-  background: url('/static/images/pic.jpg') no-repeat left;
+  background: url('/static/images/pic.png') no-repeat left;
   background-size: 55%;
   background-color: var(--theme);
   overflow: hidden;
