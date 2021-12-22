@@ -493,8 +493,9 @@ body .container {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 40px 0;
+  margin-top: 150px;
 }
 
 body .container .card {
@@ -519,6 +520,18 @@ body .container .card:nth-child(2) .box .content a {
 
 body .container .card:nth-child(3) .box .content a {
   background: #23c186;
+}
+
+body .container .card:nth-child(5) .box .content a {
+  background: var(--secondary);
+}
+
+body .container .card:nth-child(6) .box .content a {
+  background: #f3ef84;
+}
+
+body .container .card:nth-child(7) .box .content a {
+  background: #8083d0;
 }
 
 body .container .card .box {
