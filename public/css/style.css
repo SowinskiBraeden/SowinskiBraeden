@@ -413,6 +413,10 @@ body:not(.dark) #sun{
   .profile img{
       transform:scale(.85);
   }
+  .profile {
+    width: 128px;
+    height: auto;
+  }
   .first-entry{
       min-height:260px;
   }
@@ -426,16 +430,6 @@ body:not(.dark) #sun{
       padding:calc((60 - 24px - 10px)/2)24px;
   }
 }
-@media only screen and (max-width:767px){
-  .notfound .notfound-404 h2{
-      font-size:24px;
-  }
-}
-@media only screen and (max-width:480px){
-  .notfound .notfound-404 h1{
-      font-size:182px;
-  }
-}
 @media screen and (min-width:768px){
   ::-webkit-scrollbar{
       width:19px;
@@ -447,11 +441,6 @@ body:not(.dark) #sun{
       transform:translateY(-5rem);
   }
 }
-@media(prefers-reduced-motion){
-  .terms-tags a:active,.button:active,.share-buttons svg:active,.post-entry:active,.top-link,#searchResults .focus,#searchResults li:active{
-      transform:none;
-  }
-}
 @media only screen and (max-width: 514px) {
   .nav__links li a,
   .svg-wrapper#main-wrapper {
@@ -461,33 +450,6 @@ body:not(.dark) #sun{
   .mobile-name {
     display: block;
   }
-  .projects {
-    display:inline;
-    position: absolute;
-    top: 130%;
-  }
-  .project-panel {
-    background-color: var(--panel);
-    width: 80%;
-    margin: 24px;
-    border-radius: 20px;
-    height: auto;
-  }
-}
-/* Temp */
-.temp {
-  color: var(--primary);
-  transition: .8s;
-  margin-top: 3px;
-  font-weight: 500;
-  max-width: 480px;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.temp:hover {
-  cursor: default;
 }
 body .container {
   display: flex;
