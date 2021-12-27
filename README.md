@@ -5,10 +5,10 @@
 
 ## I'm a Student Developer!!
 
-- 🌱 I’m currently learning everything 🤣
+- 🌱 I’m currently picking up new tricks in Go<img align="left" alt="GoLang" width="26px" src="./public/images/go.svg" />
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2021 Goals: Contribute more to Open Source projects and land a job
-- ⚡ Fun fact: I love to play games and learn space facts
+- 🥅 2022 Goals: Contribute more to Open Source projects and possibly land a job
+- ⚡ Fun fact: I love to play games and learn about Science like the cosmos
 
 ### Connect with me:
 
