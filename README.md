@@ -32,4 +32,4 @@
 [website]: https://mcdazzzled.com/
 [twitter]: https://twitter.com/BraedenSowinski/
 [instagram]: https://instagram.com/nedearb_iksniwos/
-[discord]: https://discord.gg/w2g2FFmHbF/
+[discord]: https://discord.com/invite/w2g2FFmHbF
