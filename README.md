@@ -3,6 +3,8 @@
 [![Website](https://img.shields.io/website?label=mcdazzzled.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://mcdazzzled.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BraedenSowinski?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw)
 
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=SowinskiBraeden&show_icons=true&theme=nord)
+
 ## I'm a Student Developer!!
 
 - 🌱 I’m currently picking up new tricks in Go
@@ -27,7 +29,7 @@
 <img align="left" alt="GoLang" width="26px" src="./public/images/go.svg" />
 <img align="left" alt="Node.js" width="26px" src="./public/images/node.svg" />
 <img align="left" alt="MongoDB" width="26px" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
-<img align="left" alt="Git" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" />
+<img align="left" alt="Git" width="45px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" />
 
 [website]: https://mcdazzzled.com/
 [twitter]: https://twitter.com/BraedenSowinski/
