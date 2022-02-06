@@ -3,7 +3,6 @@
 [![Website](https://img.shields.io/website?label=mcdazzzled.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://mcdazzzled.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BraedenSowinski?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw)
 
-![Most user Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&show_icons=true&theme=nord)
 ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=SowinskiBraeden&show_icons=true&theme=nord)
 
 ## I'm a Student Developer!!
