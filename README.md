@@ -5,12 +5,13 @@
 
 ![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=SowinskiBraeden&show_icons=true&theme=nord)
 
-## I'm a Student Developer!!
-
-- 🌱 I’m currently picking up new tricks in Go
-- 👯 I’m looking to collaborate with other content creators
-- 🥅 2022 Goals: Contribute more to Open Source projects and possibly land a job
-- ⚡ Fun fact: I love to play games and learn about Science like the cosmos
+I'm an ambitious student pursuing a Computer Science degree,
+eager to contribute developed knowledge in Software
+Engineering or API development. Skilled in Python, JavaScript,
+Go and the MongoDB service. I also know the basics of the three
+C languages and Java. I am an avid computer programmer,
+adaptable and driven with a strong work ethic and motivation to
+thrive in a team-based or individually motivated setting.
 
 ### Connect with me:
 
