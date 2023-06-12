@@ -9,9 +9,8 @@ I'm an ambitious student pursuing a Computer Science degree,
 eager to contribute developed knowledge in Software
 Engineering or API development. Skilled in Python, JavaScript,
 Go and the MongoDB service. I also know the basics of the three
-C languages and Java. I am an avid computer programmer,
-adaptable and driven with a strong work ethic and motivation to
-thrive in a team-based or individually motivated setting.
+C languages, Rust and Java. I am an avid computer programmer,
+adaptable and driven with a strong work ethic and motivation to work hard.
 
 ### Connect with me:
 
