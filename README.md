@@ -1,27 +1,66 @@
-### Hi there, I'm Braeden Sowinski - aka [McDazzzled][website] 👋
+<h1 align="center">Hey there!<img src="https://github.com/wervlad/wervlad/assets/24524555/766d336d-b87d-44ba-807c-c51de2bc6b4d" width="28px" alt="👋"></h1>
 
-[![Website](https://img.shields.io/website?label=mcdazzzled.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://mcdazzzled.com)
-[![Twitter Follow](https://img.shields.io/twitter/follow/BraedenSowinski?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw)
+<p align="center">
+    <br>
+    <i>
+        I'm Braeden, aka <a href="https://mcdazzzled.com/">McDazzzled</a>.<br>
+        Currently learning various new frameworks, programs and more.<br>
+        Open to collaborating on interesting and innovative projects.<br>
+    </i><br>
+    <a href="https://www.linkedin.com/in/sowinskibraeden">
+        <img src="https://img.shields.io/badge/LinkedIn-eb5234?style=flat-square&logo=linkedin" alt="LinkedIn">
+    </a>
+    <a href="mailto:sowinskibraeden@gmail.com">
+        <img src="https://img.shields.io/badge/Email-eb5234?style=flat-square&logo=gmail&logoColor=white" alt="e-mail">
+    </a>
+    <a href="https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw">
+        <img src="https://img.shields.io/badge/Twitter-eb5234?style=flat-square&logo=twitter&logoColor=white" alt="e-mail">
+    </a>
+    <a href="https://mcdazzzled.com/">
+        <img src="https://img.shields.io/badge/mcdazzzled.com-eb5234?style=flat-square&logo=html5&logoColor=white" alt="e-mail">
+    </a>
 
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=SowinskiBraeden&show_icons=true&theme=nord)
+</p>
 
-I'm an ambitious student pursuing a Computer Science degree,
-eager to contribute developed knowledge in Software
-Engineering or API development. Skilled in Python, JavaScript,
-Go and the MongoDB service. I also know the basics of the three
-C languages, Rust and Java. I am an avid computer programmer,
-adaptable and driven with a strong work ethic and motivation to work hard.
+### Languages
+[![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/SowinskiBraeden)
+[![JavaScript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)](https://github.com/SowinskiBraeden)
+[![Go](https://img.shields.io/badge/go-black?style=for-the-badge&logo=go)](https://github.com/SowinskiBraeden)
+[![C++](https://img.shields.io/badge/c++-black?style=for-the-badge&logo=cplusplus)](https://github.com/SowinskiBraeden)
+[![C](https://img.shields.io/badge/c-black?style=for-the-badge&logo=c)](https://github.com/SowinskiBraeden)
+[![Rust](https://img.shields.io/badge/rust-black?style=for-the-badge&logo=rust)](https://github.com/SowinskiBraeden)
 
-### Connect with me:
+### Technologies & Frameworks
 
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="codeSTACKr | Discord" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/discord.svg" />][discord]
+[![MongoDB](https://img.shields.io/badge/mongodb-black?style=for-the-badge&logo=mongodb)](https://github.com/SowinskiBraeden)
+[![Git](https://img.shields.io/badge/git-black?style=for-the-badge&logo=git)](https://github.com/SowinskiBraeden)
+[![VS Code](https://img.shields.io/badge/visual%20studio%20code-black?style=for-the-badge&logo=visual%20studio%20code)](https://github.com/SowinskiBraeden)
+[![Sulblime Text](https://img.shields.io/badge/sublime%20text-black?style=for-the-badge&logo=sublime%20text)](https://github.com/SowinskiBraeden)
 
-<br />
+### OS
+[![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/SowinskiBraeden)
+[![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/SowinskiBraeden)
 
-### Languages and Tools:
+<p align="center">
+  <a href="https://github.com/SowinskiBraeden">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SowinskiBraeden&theme=transparent" />
+  </a>
+  <a href="https://github.com/SowinskiBraeden">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=SowinskiBraeden&hide_border=true&card_width=338&theme=transparent" />
+  </a>
+  <a href="https://github.com/SowinskiBraeden">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SowinskiBraeden&theme=transparent" />
+  </a>
+  <a href="https://github.com/SowinskiBraeden">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,Vue,GDScript,CMake,Makefile,css,html&card_width=699&hide_border=true&theme=transparent" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/SowinskiBraeden">
+    <img src="https://komarev.com/ghpvc/?username=SowinskiBraeden&color=eb5234&style=flat)" />
+  </a>
+</p>
 
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
 <img align="left" alt="Sublime Text" width="26px" src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" />
