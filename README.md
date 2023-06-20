@@ -58,7 +58,6 @@
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,Vue,GDScript,CMake,Makefile,css,html&card_width=699&hide_border=true&theme=transparent" />
       </a>
     </p>
-    
     <p align="center">
       <a href="https://github.com/SowinskiBraeden">
         <img src="https://komarev.com/ghpvc/?username=SowinskiBraeden&color=eb5234&style=flat)" />
