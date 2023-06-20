@@ -41,23 +41,25 @@
 [![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=Linux)](https://github.com/SowinskiBraeden)
 [![Windows](https://img.shields.io/badge/Windows-black?style=for-the-badge&logo=Windows)](https://github.com/SowinskiBraeden)
 
-<p align="center">
-  <a href="https://github.com/SowinskiBraeden">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SowinskiBraeden&theme=transparent" />
-  </a>
-  <a href="https://github.com/SowinskiBraeden">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=SowinskiBraeden&hide_border=true&card_width=338&theme=transparent" />
-  </a>
-  <a href="https://github.com/SowinskiBraeden">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SowinskiBraeden&theme=transparent" />
-  </a>
-  <a href="https://github.com/SowinskiBraeden">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,Vue,GDScript,CMake,Makefile,css,html&card_width=699&hide_border=true&theme=transparent" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/SowinskiBraeden">
-    <img src="https://komarev.com/ghpvc/?username=SowinskiBraeden&color=eb5234&style=flat)" />
-  </a>
-</p>
+<details>
+    <p align="center">
+      <a href="https://github.com/SowinskiBraeden">
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SowinskiBraeden&theme=transparent" />
+      </a>
+      <a href="https://github.com/SowinskiBraeden">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=SowinskiBraeden&hide_border=true&card_width=338&theme=transparent" />
+      </a>
+      <a href="https://github.com/SowinskiBraeden">
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SowinskiBraeden&theme=transparent" />
+      </a>
+      <a href="https://github.com/SowinskiBraeden">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,Vue,GDScript,CMake,Makefile,css,html&card_width=699&hide_border=true&theme=transparent" />
+      </a>
+    </p>
+    
+    <p align="center">
+      <a href="https://github.com/SowinskiBraeden">
+        <img src="https://komarev.com/ghpvc/?username=SowinskiBraeden&color=eb5234&style=flat)" />
+      </a>
+    </p>
+</details>
