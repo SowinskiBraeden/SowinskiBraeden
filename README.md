@@ -61,16 +61,3 @@
     <img src="https://komarev.com/ghpvc/?username=SowinskiBraeden&color=eb5234&style=flat)" />
   </a>
 </p>
-
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="Sublime Text" width="26px" src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" />
-<img align="left" alt="Python" width="26px" src="./public/images/python.svg" />
-<img align="left" alt="GoLang" width="26px" src="./public/images/go.svg" />
-<img align="left" alt="Node.js" width="26px" src="./public/images/node.svg" />
-<img align="left" alt="MongoDB" width="26px" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
-<img align="left" alt="Git" width="45px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" />
-
-[website]: https://mcdazzzled.com/
-[twitter]: https://twitter.com/BraedenSowinski/
-[instagram]: https://instagram.com/nedearb_iksniwos/
-[discord]: https://discord.com/invite/w2g2FFmHbF
