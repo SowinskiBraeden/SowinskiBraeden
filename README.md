@@ -28,7 +28,6 @@
 [![Go](https://img.shields.io/badge/go-black?style=for-the-badge&logo=go)](https://github.com/SowinskiBraeden)
 [![C++](https://img.shields.io/badge/c++-black?style=for-the-badge&logo=cplusplus)](https://github.com/SowinskiBraeden)
 [![C](https://img.shields.io/badge/c-black?style=for-the-badge&logo=c)](https://github.com/SowinskiBraeden)
-[![Rust](https://img.shields.io/badge/rust-black?style=for-the-badge&logo=rust)](https://github.com/SowinskiBraeden)
 
 ### Technologies & Frameworks
 
