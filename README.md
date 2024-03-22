@@ -3,7 +3,7 @@
 <p align="center">
     <br>
     <i>
-        I'm Braeden, aka <a href="https://mcdazzzled.com/">McDazzzled</a>.<br>
+        I'm Braeden, aka <a href="https://mcdazzzled.xyz/">McDazzzled</a>.<br>
         Currently learning various new frameworks, programs and more.<br>
         Open to collaborating on interesting and innovative projects.<br>
     </i><br>
@@ -17,7 +17,7 @@
         <img src="https://img.shields.io/badge/Twitter-eb5234?style=flat-square&logo=twitter&logoColor=white" alt="e-mail">
     </a> -->
     <a href="https://mcdazzzled.xyz/">
-        <img src="https://img.shields.io/badge/mcdazzzled.com-eb5234?style=flat-square&logo=html5&logoColor=white" alt="e-mail">
+        <img src="https://img.shields.io/badge/mcdazzzled.xyz-eb5234?style=flat-square&logo=html5&logoColor=white" alt="e-mail">
     </a>
 
 </p>
