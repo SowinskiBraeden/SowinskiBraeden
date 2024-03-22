@@ -16,7 +16,7 @@
 <!--     <a href="https://twitter.com/BraedenSowinski?ref_src=twsrc%5Etfw">
         <img src="https://img.shields.io/badge/Twitter-eb5234?style=flat-square&logo=twitter&logoColor=white" alt="e-mail">
     </a> -->
-    <a href="https://mcdazzzled.com/">
+    <a href="https://mcdazzzled.xyz/">
         <img src="https://img.shields.io/badge/mcdazzzled.com-eb5234?style=flat-square&logo=html5&logoColor=white" alt="e-mail">
     </a>
 
