@@ -53,7 +53,7 @@
         <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SowinskiBraeden&theme=transparent" />
       </a>
       <a href="https://github.com/SowinskiBraeden">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,Vue,GDScript,CMake,Makefile,css,html&card_width=699&hide_border=true&theme=transparent" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=5&hide=EJS,css,html&card_width=699&hide_border=true&theme=transparent" />
       </a>
     </p>
     <p align="center">
