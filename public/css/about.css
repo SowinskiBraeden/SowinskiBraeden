@@ -16,7 +16,7 @@ section {
 
 #profile {
   background-image: url("../images/pic.png");
-  color: #d8d8d9; /* dont use variable as we want this text to always be this color */
+  color: #d8d8d9;
 }
 
 #profile img {
