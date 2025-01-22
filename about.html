@@ -10,6 +10,7 @@
 
   <!-- Load CSS -->
   <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./public/css/about.css">
 </head>
 
 <body class="js-stop-transition">
@@ -75,56 +76,69 @@
           <span class="active">Projects</span>
         </a>
       </div>
+    </div>
   </header>
 
-  <!-- About Body -->
-  <div class="about-section">
-    <div class="inner-container">
-      <h1 id="about-me">About Me</h1>
-      <p class="text">
-        Hello there,
-        I am Braeden Sowinski, you may also know me by my pseudonym McDazzzled. I am an avid software engineer, actively
-        pursuing a Diploma in Computer System Technologies at BCIT. I am adaptable and driven with a strong work ethic; 
-        possessing the ability to thrive in both a team-based or individualy motivated setting.
+  <div class="container">
+    <div id="left">
+      <section id="profile">
+        <img src="https://avatars.githubusercontent.com/u/48144618" class="profile" alt="profile">
+        <div class="profile-sub">
+          <h2 style="margin-top: 2px;">Braeden Sowinski</h2>
+          <span class="des">Software Engineer & System Administrator</span>
+        </div>
+      </section>
+      <section id="skills">
+        <h3 class="title">SKILLS</h3>
 
-        I am eager to expand my knowledge in Software Engineering, IT, System Administration and related fields.
-        Approaching more than 5 years of continuous learning and programming, I have learned many valuable languages and 
-        frameworks such as C, Go, Node.js, and Python 3+. However, there is always more to learn and experience that I 
-        will accomplish by quickly adapting to a new setting.
-      </p>
+        <ol style="transform: translate(-25px, 0);">
+          <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+          <li><a href="https://www.python.org/" target="_blank">Python 3+</a></li>
+          <li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
+          <li><a href="https://go.dev/" target="_blank">Go</a></li>
+          <li>C</li>
+          <li>Markdown</li>
+          <li>Windows/Debian based OS</li>
+          <li>System Administration</li>
+          <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+        </ol>
+      </section>
+    </div>
+    
+    <div id="right">
+      <section id="about">
+        <h3 class="title">About me</h3>
+        <p class="text">
+          Hello there,
+          I am Braeden Sowinski, you may also know me by my pseudonym McDazzzled. I am an avid software engineer, actively
+          pursuing a Diploma in Computer System Technologies at BCIT. I am adaptable and driven with a strong work ethic; 
+          possessing the ability to thrive in both a team-based or individualy motivated setting.
+  
+          I am eager to expand my knowledge in Software Engineering, IT, System Administration and related fields.
+          Approaching more than 5 years of continuous learning and programming, I have learned many valuable languages and 
+          frameworks such as C, Go, Node.js, and Python 3+. However, there is always more to learn and experience that I 
+          will accomplish by quickly adapting to a new setting.
+        </p>
+      </section>
+      <section id="honors">
+        <h3 class="title">Honors & Awards</h3>
 
-      <div class="skills">
-        <span>
-          <img style="transform: translate(0, 8px);"
-            src="https://img.shields.io/badge/python-black?style=for-the-badge&logo=python" width="24" height="24">
-          Python
-        </span>
+        <dl>
+        <dt><b>Capstone Project Recognition</b></dt>
+        <dd>
+          Issued by
+          <abbr title="Sullivan Heights Secondary School">SHSS</abbr>
+          — Recognition award
+            for capstone project.
+        </dd>
 
-        <span>
-          <img style="transform: translate(0, 8px);"
-            src="https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript" width="24"
-            height="24">
-          Node.js
-        </span>
-
-        <span>
-          <img style="transform: translate(0, 8px);"
-            src="https://img.shields.io/badge/go-black?style=for-the-badge&logo=go" width="24" height="24">
-          Go
-        </span>
-
-        <span>
-          <img style="transform: translate(0, 8px);"
-            src="https://img.shields.io/badge/mongodb-black?style=for-the-badge&logo=mongodb" width="24" height="24">
-          MongoDB
-        </span>
-
-        <span>
-          <img style="transform: translate(0, 8px);"
-            src="https://img.shields.io/badge/git-black?style=for-the-badge&logo=git" width="24" height="24">
-          Git
-        </span>
-      </div>
+        <dt><b>Master Digital Crafter</b></dt>
+        <dd>
+          Issued by
+          <abbr title="Sullivan Heights Secondary School">SHSS</abbr>
+          — Exceeding expectationg in Software Engineering 11/12</dd>
+        </dl>
+      </section>
     </div>
   </div>
 
@@ -135,7 +149,7 @@
   <script>document.body.classList.remove('js-stop-transition')</script>
 
   <!-- Change Theme Scripts -->
-  <script type="text/javascript">
+  <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
       document.body.className.includes("light") ? (
         document.body.classList.remove('light'),

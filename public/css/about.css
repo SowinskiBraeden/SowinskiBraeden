@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-areas: "header header";
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+section {
+  transition: .8s;
+  padding: 24px;
+  background-color: var(--menu-text-bg);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+#profile {
+  background-image: url("../images/pic.png");
+  color: #d8d8d9; /* dont use variable as we want this text to always be this color */
+}
+
+#profile img {
+  border: 6px solid var(--primary);
+  transition: .8s;
+}
+
+.profile-sub {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+dt {
+  margin-top: 12px;
+}
+
+@media only screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #skills {
+    margin-bottom: 0px;
+  }
+}
