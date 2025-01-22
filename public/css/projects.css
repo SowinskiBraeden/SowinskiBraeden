@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+15&family=Sixtyfour+Convergence&display=swap');
+
+.container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  transition: 0.8s;
+  width: 54vh;
+  height: auto;
+  margin: 30px;
+  padding: 20px;
+  background-color: var(--menu-text-bg);
+  border-radius: 24px;
+  display: flex;
+}
+
+.box {
+  transition: 0.8s;
+  background-color: var(--theme);
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.content {
+  transition: 0.8s;
+  margin-left: 18px;
+  margin-right: 18px;
+  align-items: stretch;
+}
+
+.content h2 {
+  transition: 0.8s;
+  font-size: 275%;
+  margin-top: 5px;
+  font-family: "Sixtyfour Convergence", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 2px red, 0 0 1em var(--accent), 0 0 0.2em var(--secondary);
+  min-width: 2.75cm;
+}
+
+.content h3 {
+  font-size: 150%;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 0.75cm;
+}
+
+.content p {
+  transition: 0.8s;
+  font-size: 18px;
+  line-height: 1.6;
+  word-break: break-word;
+  background: var(--theme);
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+}
+
+.content a {
+  background-color: var(--secondary);
+  padding: 8px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 1px 1px 2px red, 0 0 1em var(--accent), 0 0 0.2em var(--secondary);
+  margin-bottom: 15px;
+}
+
+.content-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content-body p {
+  min-height: 5cm;
+}
+
+.content-body a {
+  margin-bottom: 15px;
+  text-align: center;
+  max-width: 100px;
+}
+
+.content-body #links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#links a {
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100px;
+}
+
+/* prevents it changing color */
+.content-body a:hover {
+  color: var(--primary);
+}
