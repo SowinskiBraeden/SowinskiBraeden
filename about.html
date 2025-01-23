@@ -85,22 +85,22 @@
         <img src="https://avatars.githubusercontent.com/u/48144618" class="profile" alt="profile">
         <div class="profile-sub">
           <h2 style="margin-top: 2px;">Braeden Sowinski</h2>
-          <span class="des">Software Engineer & System Administrator</span>
+          <span id="des1" class="des">Software Engineer & System Administrator</span>
         </div>
       </section>
       <section id="skills">
         <h3>SKILLS</h3>
 
         <ul class="text">
-          <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+          <li><a href="https://git-scm.com/" target="_blank">Git/GitHub</a></li>
           <li><a href="https://www.python.org/" target="_blank">Python 3+</a></li>
           <li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
           <li><a href="https://go.dev/" target="_blank">Go</a></li>
           <li>C</li>
           <li>Markdown</li>
-          <li>Windows/Debian based OS</li>
           <li>System Administration</li>
           <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+          <li>Windows/Debian based OS</li>
         <ul>
       </section>
     </div>
@@ -111,9 +111,10 @@
         <p class="text">
           Hello there,
           I am Braeden Sowinski, you may also know me by my pseudonym McDazzzled. I am an avid software engineer, actively
-          pursuing a Diploma in Computer System Technologies at BCIT. I am adaptable and driven with a strong work ethic; 
+          pursuing a Diploma in Computer System Technologies at <abbr title="British Columbia Institute of Technology">BCIT</abbr>. I am adaptable and driven with a strong work ethic; 
           possessing the ability to thrive in both a team-based or individualy motivated setting.
-  
+        </p>
+        <p class="text">
           I am eager to expand my knowledge in Software Engineering, IT, System Administration and related fields.
           Approaching more than 5 years of continuous learning and programming, I have learned many valuable languages and 
           frameworks such as C, Go, Node.js, and Python 3+. However, there is always more to learn and experience that I 
@@ -199,7 +200,7 @@
     // If storage is supported set theme to light by default
     if (typeof(Storage) !== "undefined") {
       if (sessionStorage.getItem("theme") == null || sessionStorage.getItem("theme") == undefined) sessionStorage.setItem("theme", "dark");
-      if (sessionStorage.getItem("theme") == 'dark') {
+      if (sessionStorage.getItem("theme") == 'light') {
         document.body.className.includes("dark") ? (
           document.body.classList.remove('dark'),
           localStorage.setItem("pref-theme",'light')

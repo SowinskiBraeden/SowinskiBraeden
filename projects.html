@@ -260,7 +260,7 @@
     // If storage is supported set theme to light by default
     if (typeof(Storage) !== "undefined") {
       if (sessionStorage.getItem("theme") == null || sessionStorage.getItem("theme") == undefined) sessionStorage.setItem("theme", "dark");
-      if (sessionStorage.getItem("theme") == 'dark') {
+      if (sessionStorage.getItem("theme") == 'light') {
         document.body.className.includes("dark") ? (
           document.body.classList.remove('dark'),
           localStorage.setItem("pref-theme",'light')

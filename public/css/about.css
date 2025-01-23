@@ -6,6 +6,7 @@
   gap: 24px;
   padding: 24px;
   padding-bottom: 0px;
+  /* border: 1px solid pink; */
 }
 
 section {
@@ -14,6 +15,10 @@ section {
   background-color: var(--menu-text-bg);
   border-radius: 12px;
   margin-bottom: 24px;
+}
+
+section h3 {
+  margin-top: -5px;
 }
 
 .flex-container {
@@ -65,7 +70,6 @@ footer {
   padding: 8px;
   background-color: var(--menu-text-bg);
   border-radius: 12px;
-  margin-bottom: 24px;
 }
 
 footer p {
@@ -78,6 +82,30 @@ footer p {
 .social-icons {
   margin-top: 6px;
   margin-right: 24px;
+}
+
+#profile, #skills {
+  min-width: 275px;
+}
+
+#profile {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom: 0px;
+}
+
+#skills {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-top: 0px;
+}
+
+#about {
+  min-height: 300px;
+}
+
+#honors {
+  min-height: 218px;
 }
 
 @media only screen and (max-width: 740px) {
