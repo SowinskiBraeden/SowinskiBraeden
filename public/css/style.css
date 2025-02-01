@@ -58,21 +58,21 @@ ul {
 ul li::before {
   content: '';
   position: absolute;
-  margin-top: 42px;
+  margin-top: 42pt;
   width: 0;
   background-color: var(--secondary);
   z-index: 9999;
-  height: 3px;
+  height: 3pt;
   transition: 0.8s all;
 }
 
 ul li#home-link:hover::before,
 ul li#about-link:hover::before {
-  width: 45px;
+  width: 45pt;
 }
 
 ul li#projects-link:hover::before {
-  width: 58px;
+  width: 58pt;
 }
 
 a {
@@ -97,10 +97,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: calc(1024px + 24px * 2);
+  max-width: calc(1024pt + 24pt * 2);
   margin-inline-start: auto;
   margin-inline-end: auto;
-  line-height: 60px;
+  line-height: 60pt;
 }
 
 .nav a {
@@ -110,7 +110,7 @@ ul {
 .logo,
 #menu {
   display: flex;
-  margin: auto 24px;
+  margin: auto 24pt;
 }
 
 .logo {
@@ -127,8 +127,8 @@ ul {
   vertical-align: middle;
   pointer-events: none;
   transform: translate(0, -10%);
-  border-radius: 6px;
-  margin-inline-end: 8px
+  border-radius: 6pt;
+  margin-inline-end: 8pt
 }
 
 #menu {
@@ -139,11 +139,11 @@ ul {
 }
 
 #menu li+li {
-  margin-inline-start: 24px;
+  margin-inline-start: 24pt;
 }
 
 #menu a {
-  font-size: 16px
+  font-size: 16px;
 }
 
 #menu .active {
@@ -158,15 +158,15 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  padding: 10px;
+  padding: 10pt;
   color: var(--primary);
 }
 
 .svg-wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 320pt;
   position: relative;
-  height: 64px;
+  height: 64pt;
   overflow-y: hidden;
 }
 
@@ -174,14 +174,14 @@ ul {
   z-index: 9999;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke-width: 8px;
+  stroke-width: 8pt;
   fill: transparent;
   stroke: var(--secondary);
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 
 .svg-wrapper:hover .shape {
-  stroke-width: 2px;
+  stroke-width: 2pt;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }
@@ -190,8 +190,8 @@ ul {
   transition: 0.8s;
   font-size: 30px;
   font-weight: 900;
-  margin-bottom: 10px;
-  transform: translate(0, -64px);
+  margin-bottom: 10pt;
+  transform: translate(0, -64pt);
 }
 
 .name:hover {
@@ -214,23 +214,23 @@ ul {
 }
 
 .profile {
-  width: 190px;
-  height: 190px;
+  width: 190pt;
+  height: 190pt;
   border-radius: 50%;
   transition: 0.8s;
 }
 
 .social-icons {
-  padding: 12px 0;
+  padding: 12pt 0;
 }
 
 .social-icons a:not(:last-of-type) {
-  margin-inline-end: 12px;
+  margin-inline-end: 12pt;
 }
 
 .social-icons a svg {
-  height: 26px;
-  width: 26px;
+  height: 26pt;
+  width: 26pt;
 }
 
 .social-icons a {
@@ -251,7 +251,7 @@ ul {
 }
 
 #theme-toggle svg {
-  height: 18px;
+  height: 18pt;
 }
 
 button#theme-toggle {
@@ -259,7 +259,7 @@ button#theme-toggle {
   border: none;
   color: var(--primary);
   font-size: 26px;
-  margin: auto 4px;
+  margin: auto 4pt;
   transition: 0.8s;
 }
 
@@ -319,7 +319,7 @@ body:not(.light) #sun {
 .overlay a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 15pt;
   font-size: 36px;
   display: block;
   transition: all 0.3s ease 0s;
@@ -332,8 +332,8 @@ body:not(.light) #sun {
 
 .overlay .close {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 20pt;
+  right: 45pt;
   font-size: 60px;
   color: #edf0f1;
   cursor: pointer;
@@ -351,18 +351,18 @@ body:not(.light) #sun {
   cursor: default;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768pt) {
   .profile img {
     transform: scale(.85);
   }
 
   .profile {
-    width: 128px;
+    width: 128pt;
     height: auto;
   }
 
   .first-entry {
-    min-height: 260px;
+    min-height: 260pt;
   }
 
   .archive-month {
@@ -370,15 +370,15 @@ body:not(.light) #sun {
   }
 
   .archive-year {
-    margin-top: 20px;
+    margin-top: 20pt;
   }
 
   .footer {
-    padding: calc((60 - 24px - 10px)/2)24px;
+    padding: calc((60 - 24pt - 10pt)/2)24pt;
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 740pt) {
 
   .nav__links li a,
   .svg-wrapper#main-wrapper {
