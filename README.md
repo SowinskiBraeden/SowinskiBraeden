@@ -25,7 +25,7 @@
 [![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/SowinskiBraeden)
 [![JavaScript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)](https://github.com/SowinskiBraeden)
 [![Go](https://img.shields.io/badge/go-black?style=for-the-badge&logo=go)](https://github.com/SowinskiBraeden)
-[![C++](https://img.shields.io/badge/c++-black?style=for-the-badge&logo=cplusplus)](https://github.com/SowinskiBraeden)
+[![Java](https://img.shields.io/badge/java-black?style=for-the-badge&logo=java)](https://github.com/SowinskiBraeden)
 [![C](https://img.shields.io/badge/c-black?style=for-the-badge&logo=c)](https://github.com/SowinskiBraeden)
 
 ### Technologies & Frameworks
