@@ -389,4 +389,14 @@ body:not(.light) #sun {
   .mobile-name {
     display: block;
   }
+
+  .logo {
+    margin-top: 12pt;
+  }
+  .logo-switches {
+    margin-top: 4pt;
+  }
+  .main {
+    width: 100%;
+  }
 }

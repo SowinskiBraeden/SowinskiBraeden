@@ -107,4 +107,16 @@ footer p {
   #skills {
     margin-bottom: 0pt;
   }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer p {
+    margin: 0pt;
+    margin-top: 12pt;
+  }
+  .social-icons {
+    margin: 0pt;
+    margin-top: 6pt;
+  }
 }

@@ -150,4 +150,16 @@
   .content-head h2 {
     margin-top: 24pt;
   }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer p {
+    margin: 0pt;
+    margin-top: 12pt;
+  }
+  .social-icons {
+    margin: 0pt;
+    margin-top: 6pt;
+  }
 }
