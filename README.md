@@ -4,7 +4,7 @@
     <br>
     <i>
         I'm Braeden, aka <a href="https://mcdazzzled.xyz/">McDazzzled</a>.<br>
-        Currently learning various new frameworks, programs and more.<br>
+        Currently learning low level systems.<br>
         Open to collaborating on interesting and innovative projects.<br>
     </i><br>
     <a href="https://www.linkedin.com/in/sowinskibraeden">
