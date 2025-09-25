@@ -10,14 +10,13 @@
 
   <!-- Load CSS -->
   <link rel="stylesheet" href="./public/css/style.css">
-  <link rel="stylesheet" href="./public/css/about.css">
 </head>
 
 <body class="js-stop-transition">
   <header class=header>
     <nav class=nav>
       <div class=logo>
-        <a href="/" title="sowinski.dev (Alt + H)">
+        <a href="/" title="sowinski.dev">
           <img src="https://avatars.githubusercontent.com/u/48144618?v=4" alt=logo style="border-radius:50%;"
             aria-label=logo height=32>sowinski.dev
         </a>
@@ -66,160 +65,95 @@
     <div id="mobile__menu" class="overlay">
       <a class="close">&times;</a>
       <div class="overlay__content">
-        <a href="/" title="Home">
-          <span class="active">Home</span>
-        </a>
-        <a href="/about" title="about">
-          <span class="active">About</span>
-        </a>
-        <a href="/projects" title="projects">
-          <span class="active">Projects</span>
-        </a>
+        <a href="/" title="Home"><span class="active">Home</span></a>
+        <a href="/about" title="about"><span class="active">About</span></a>
+        <a href="/projects" title="projects"><span class="active">Projects</span></a>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="left-content">
-      <section id="profile">
-        <img src="https://avatars.githubusercontent.com/u/48144618" class="profile" alt="profile">
-        <div class="profile-sub">
-          <h2 style="margin-top: 2px; margin-bottom: 2px;">Braeden Sowinski</h2>
-          <span class="des" style="font-size: 14pt; font-weight: 400;">
-            Software Engineer & Systems Admin | CST Student @ BCIT
-            Passion for Backend Systems & Data-Driven Development
-          </span>
-        </div>
-      </section>
-      <section id="skills">
-        <h3>SKILLS</h3>
-
-        <ul class="text">
-          <li>Java, C, Go</li>
-          <li>JavaScript (Node.js)</li>
-          <li>Python3+</li>
-          <li>Git, Github, GitLab</li>
-          <li>Docker</li>
-          <li>MongoDB & SQL</li>
-          <li>Windows/Debian based OS</li>
-          <li>Data Structures & Algorithms</li>
-          <li>System Administration</li>
-          <li>Data-Driven Software</li>
-          <li>Oral & Written Communication</li>
-          <li>Team Collaboration & Adaptability</li>
-        <ul>
-      </section>
+  <!-- Main Body -->
+  <div class="main">
+    <img src="https://avatars.githubusercontent.com/u/48144618" class="profile" alt="profile">
+    <div id="main-wrapper" class="svg-wrapper">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" class="shape" height="60" width="320" />
+        <h2 style="margin-top: 16pt;" class="name">Braeden Sowinski</h2>
+      </svg>
     </div>
-  
-    <section class="about" id="about">
-      <h3 class="title">About me</h3>
-      <p class="text">
-        As a software engineer, I am passionate about developing back-end systems and data-driven applications. 
-        Currently pursuing a Diploma in Computer Systems Technology at 
-        <abbr title="British Columbia Institute of Technology">BCIT</abbr>, I continuously expand my skills 
-        through hands-on projects and real-world applications, driven by curiosity and a love for problem-solving.        
-      </p>
-      <p class="text">
-        Experience building back-end systems, APIs, and full-stack applications has strengthened my foundation 
-        in languages such as C, Go, Java, JavaScript, and Python, as well as technologies like Docker, MongoDB, 
-        and SQL. Working on collaborative BCIT projects and open-source contributions has further developed my 
-        skills in agile workflows, oral and written communication, and delivering solutions that solve real-world p
-        roblems, all while exploring new frameworks and methodologies
-      </p>
-    </section>
+    <h2 style="margin-top: 2pt;" class="mobile-name">Braeden Sowinski</h2>
+    <span class="des">
+      Software Engineer & Systems Admin | CST Student @ BCIT
+    </span><br>
+    <span class="des">
+      Passion for Backend Systems & Data-Driven Development
+    </span>
+    <div class="social-icons">
+      <a class="icon" href="https://www.linkedin.com/in/SowinskiBraeden" target=_blank rel="noopener noreferrer me"
+        title=LinkedIn>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+        </svg>
+      </a>
+      <a class="icon" href=https://github.com/SowinskiBraeden target=_blank rel="noopener noreferrer me" title=Github>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22" />
+        </svg>
+      </a>
+      <a class="icon" href=https://twitter.com/braedensowinski target=_blank rel="noopener noreferrer me" title=Twitter>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z" />
+        </svg>
+      </a>
+      <a class="icon" href="mailto:braeden@sowinski.dev" target=_blank rel="noopener noreferrer me" title=Email>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentcolor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+    </div>
 
-    <section class="honors" id="honors">
-      <h3 class="title">Honors & Awards</h3>
+    <!-- Import Mobile.js for mobile nav menu -->
+    <script src="./public/scripts/mobile.js"></script>
 
-      <dl>
-        <dt class="text"><b>Capstone Project Recognition</b></dt>
-        <dd class="text">
-          Issued by
-          <abbr title="Sullivan Heights Secondary School">SHSS</abbr>
-          — Award recognizing the hard work on my schedule-generating software, generating student schedules 
-            and master timetables for a high school environment
-        </dd>
+    <!-- Disable transitions on webpage load -->
+    <script>document.body.classList.remove('js-stop-transition')</script>
 
-        <dt class="text"><b>Master Digital Crafter</b></dt>
-        <dd class="text">
-          Issued by
-          <abbr title="Sullivan Heights Secondary School">SHSS</abbr>
-          — Award issued by the former Head IT Admin/Teacher at Sullivan Heights Secondary for excelling in 
-            Web Development 10, and Software Engineering 11/12
-        </dd>
-      </dl>
-    </section>
-
-    <footer class="footer flex-container">
-      <p>Get in touch with me!</p>
-      <div class="social-icons">
-        <a class="icon" href="https://www.linkedin.com/in/SowinskiBraeden" target=_blank rel="noopener noreferrer me"
-          title=LinkedIn>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-          </svg>
-        </a>
-        <a class="icon" href=https://github.com/SowinskiBraeden target=_blank rel="noopener noreferrer me" title=Github>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22" />
-          </svg>
-        </a>
-        <a class="icon" href=https://twitter.com/braedensowinski target=_blank rel="noopener noreferrer me" title=Twitter>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z" />
-          </svg>
-        </a>
-        <a class="icon" href="mailto:braeden@sowinski.dev" target=_blank rel="noopener noreferrer me" title=Email>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentcolor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-        </a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Import Mobile.js for mobile nav menu -->
-  <script src="./public/scripts/mobile.js"></script>
-
-  <!-- Disable transitions on webpage load -->
-  <script>document.body.classList.remove('js-stop-transition')</script>
-
-  <!-- Change Theme Scripts -->
-  <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-      document.body.className.includes("light") ? (
-        document.body.classList.remove('light'),
-        localStorage.setItem("pref-theme",'dark')
-      ) : (
-        document.body.classList.add('light'),
-        localStorage.setItem("pref-theme",'light')
-      ),
-      "dark" == sessionStorage.getItem("theme") ? sessionStorage.setItem("theme", "light") : sessionStorage.setItem("theme", "dark"); 
-    });
-  </script>
-  <script>
-    // If storage is supported set theme to light by default
-    if (typeof(Storage) !== "undefined") {
-      if (sessionStorage.getItem("theme") == null || sessionStorage.getItem("theme") == undefined) sessionStorage.setItem("theme", "dark");
-      if (sessionStorage.getItem("theme") == 'light') {
-        document.body.className.includes("dark") ? (
-          document.body.classList.remove('dark'),
-          localStorage.setItem("pref-theme",'light')
-        ) : (
-          document.body.classList.add('dark'),
+    <!-- Change Theme Scripts -->
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        document.body.className.includes("light") ? (
+          document.body.classList.remove('light'),
           localStorage.setItem("pref-theme",'dark')
-        );
+        ) : (
+          document.body.classList.add('light'),
+          localStorage.setItem("pref-theme",'light')
+        ),
+        "dark" == sessionStorage.getItem("theme") ? sessionStorage.setItem("theme", "light") : sessionStorage.setItem("theme", "dark"); 
+      });
+    </script>
+    <script>
+      // If storage is supported set theme to light by default
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.getItem("theme") == null || sessionStorage.getItem("theme") == undefined) sessionStorage.setItem("theme", "dark");
+        if (sessionStorage.getItem("theme") == 'light') {
+          document.body.className.includes("dark") ? (
+            document.body.classList.remove('dark'),
+            localStorage.setItem("pref-theme",'light')
+          ) : (
+            document.body.classList.add('dark'),
+            localStorage.setItem("pref-theme",'dark')
+          );
+        }
       }
-    }
-  </script>
+    </script>
 </body>
 
 </html>
