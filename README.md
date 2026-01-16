@@ -55,7 +55,8 @@
   <p align="center">
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SowinskiBraeden&theme=transparent" />
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SowinskiBraeden&theme=transparent" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=6&hide=EJS,css,html&card_width=699&hide_border=true&theme=transparent" />
+    <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=6&hide=EJS,css,html&card_width=699&hide_border=true&theme=transparent" /> -->
+    <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=SowinskiBraeden&langs_count=6&hide=EJS,css,html&card_width=699&hide_border=true&theme=transparent" /> <!-- original vercel app paused -->
   </p>
 </details>
 
