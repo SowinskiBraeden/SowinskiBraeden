@@ -45,6 +45,7 @@
 
 ### 🧠 Currently Exploring
 - Low-level systems (assembly and computer architecture)
+- Functional Programming with OCaml
 - Backend engineering with Go and Java
 - Relational modeling & PostgreSQL
 - Scalable, data-driven software design
