@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>Braeden Sowinski</title>
+  <meta name='description' content="Braeden Sowinski's portfolio" />
+  <meta name='author' content="Braeden Sowinski" />
+  <meta name='keywords' content="Braeden Sowinski, project entry, portfolio" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./public/css/projects.css">
+</head>
+
+<body class="js-stop-transition">
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="./" title="sowinski.dev (Alt + H)">
+          <img src="https://avatars.githubusercontent.com/u/48144618?v=4" alt="logo" style="border-radius:50%;"
+            aria-label="logo" height="32">sowinski.dev
+        </a>
+        <span class="logo-switches">
+          <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+        </span>
+      </div>
+      <ul id="menu" class="nav__links">
+        <li id="home-link">
+          <a href="./" title="Home">
+            <span class="active">Home</span>
+          </a>
+        </li>
+        <li id="about-link">
+          <a href="./about.html" title="About">
+            <span class="active">About</span>
+          </a>
+        </li>
+        <li id="projects-link">
+          <a href="./projects.html" title="Projects">
+            <span class="active">Projects</span>
+          </a>
+        </li>
+      </ul>
+      <p class="menu cta">Menu</p>
+    </nav>
+
+    <div id="mobile__menu" class="overlay">
+      <button type="button" class="close" aria-label="Close menu">&times;</button>
+      <div class="overlay__content">
+        <a href="./" title="Home"><span class="active">Home</span></a>
+        <a href="./about.html" title="About"><span class="active">About</span></a>
+        <a href="./projects.html" title="Projects"><span class="active">Projects</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="entry-page page-shell">
+    <div id="entry-shell" class="entry-shell">
+      <p class="loading-state">Loading entry...</p>
+    </div>
+  </main>
+
+  <script src="./public/scripts/mobile.js"></script>
+  <script src="./public/scripts/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./public/scripts/content.js"></script>
+  <script>
+    window.PORTFOLIO_CONTENT.initEntryPage();
+  </script>
+</body>
+
+</html>

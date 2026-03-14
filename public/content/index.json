@@ -1,0 +1,147 @@
+{
+  "projects": [
+    {
+      "title": "Schedule Generator App",
+      "slug": "schedule-generator-app",
+      "type": "projects",
+      "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
+      "label": "Project",
+      "date": "2023-08-01",
+      "status": "Personal Project",
+      "github": "https://github.com/SowinskiBraeden/ScheduleGeneratorApp",
+      "demo": null,
+      "featured": true,
+      "order": 1,
+      "tags": [
+        "Python",
+        "Desktop App",
+        "Scheduling",
+        "Data Processing"
+      ],
+      "path": "./public/content/projects/schedule-generator-app.md"
+    },
+    {
+      "title": "School Management API",
+      "slug": "school-management-api",
+      "type": "projects",
+      "summary": "I developed an API to manage an entire school, keeping track of students and staff details while expanding my understanding of Go, API development, and documentation.",
+      "label": "Project",
+      "date": "2023-09-01",
+      "status": "Personal Project",
+      "github": "https://github.com/SowinskiBraeden/school-management-api",
+      "demo": null,
+      "featured": true,
+      "order": 2,
+      "tags": [
+        "Go",
+        "API",
+        "Documentation",
+        "Education Tech"
+      ],
+      "path": "./public/content/projects/school-management-api.md"
+    },
+    {
+      "title": "Lines Police CAD",
+      "slug": "lines-police-cad",
+      "type": "projects",
+      "summary": "A web service built with Node.js, Express.js, and MongoDB. I contributed features, bug fixes, and general technical support to a product serving a large user base.",
+      "label": "Project",
+      "date": "2022-06-01",
+      "status": "Collaboration",
+      "github": "https://github.com/LinesMerrill/police-cad",
+      "demo": "https://www.linespolice-cad.com/",
+      "featured": false,
+      "order": 3,
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Web App"
+      ],
+      "path": "./public/content/projects/lines-police-cad.md"
+    },
+    {
+      "title": "DayZ Reforger Bot",
+      "slug": "dayz-reforger-bot",
+      "type": "projects",
+      "summary": "A large-scale Discord bot focused on parsing game server data, storing it, and presenting valuable information back to users through analytics-driven features.",
+      "label": "Project",
+      "date": "2024-11-08",
+      "status": "Active",
+      "github": "https://github.com/SowinskiBraeden/dayz-reforger",
+      "demo": null,
+      "featured": true,
+      "order": 4,
+      "tags": [
+        "Node.js",
+        "Discord.js",
+        "MongoDB",
+        "Analytics",
+        "Nitrado"
+      ],
+      "path": "./public/content/projects/dayz-reforger-bot.md"
+    },
+    {
+      "title": "XP-System",
+      "slug": "xp-system",
+      "type": "projects",
+      "summary": "An early web application project where teachers could assign work and students could earn XP and levels, making the learning process more interactive.",
+      "label": "Project",
+      "date": "2021-05-01",
+      "status": "Early Project",
+      "github": "https://github.com/SowinskiBraeden/XP-System",
+      "demo": null,
+      "featured": false,
+      "order": 5,
+      "tags": [
+        "Web App",
+        "Education Tech",
+        "Gamification"
+      ],
+      "path": "./public/content/projects/xp-system.md"
+    },
+    {
+      "title": "Portfolio",
+      "slug": "portfolio",
+      "type": "projects",
+      "summary": "A minimal personal portfolio focused on clarity, clean presentation, and an easy way to showcase projects, updates, and professional growth.",
+      "label": "Project",
+      "date": "2026-03-14",
+      "status": "Active",
+      "github": "https://github.com/SowinskiBraeden/SowinskiBraeden",
+      "demo": null,
+      "featured": false,
+      "order": 6,
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Portfolio"
+      ],
+      "path": "./public/content/projects/portfolio.md"
+    }
+  ],
+  "updates": [
+    {
+      "title": "3rd Place at the inaugural Red Team Hackathon",
+      "slug": "red-team-hackathon-2026",
+      "type": "updates",
+      "summary": "Team Cerberus Gate earned a third-place finish while building a prototype focused on RF signal classification, modulation analysis, and emitter geolocation.",
+      "label": "Update",
+      "date": "2026-03-12",
+      "status": "Achievement",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "order": 1,
+      "tags": [
+        "Hackathon",
+        "RF",
+        "Machine Learning",
+        "Geolocation",
+        "BCIT"
+      ],
+      "path": "./public/content/updates/red-team-hackathon-2026.md"
+    }
+  ]
+}
