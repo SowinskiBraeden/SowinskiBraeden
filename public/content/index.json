@@ -7,7 +7,7 @@
       "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
       "label": "Project",
       "date": "2023-08-01",
-      "status": "Personal Project",
+      "status": "Completed",
       "github": "https://github.com/SowinskiBraeden/ScheduleGeneratorApp",
       "demo": null,
       "featured": true,
@@ -27,7 +27,7 @@
       "summary": "I developed an API to manage an entire school, keeping track of students and staff details while expanding my understanding of Go, API development, and documentation.",
       "label": "Project",
       "date": "2023-09-01",
-      "status": "Personal Project",
+      "status": "Stale",
       "github": "https://github.com/SowinskiBraeden/school-management-api",
       "demo": null,
       "featured": true,
@@ -88,7 +88,7 @@
       "summary": "An early web application project where teachers could assign work and students could earn XP and levels, making the learning process more interactive.",
       "label": "Project",
       "date": "2021-05-01",
-      "status": "Early Project",
+      "status": "Early Project - Stale",
       "github": "https://github.com/SowinskiBraeden/XP-System",
       "demo": null,
       "featured": false,
@@ -142,6 +142,25 @@
         "BCIT"
       ],
       "path": "./public/content/updates/red-team-hackathon-2026.md"
+    },
+    {
+      "title": "Joined the BCIT Computing Club as an Executive Member",
+      "slug": "joined-bcit-computing-club",
+      "type": "updates",
+      "summary": "After helping friends and existing exutives of the BCIT Computing Club, I have officially joined to help represent, and direct events such as reviews sessions, and hackathons.",
+      "label": "Update",
+      "date": "2025-12-24",
+      "status": "New Role",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "order": 2,
+      "tags": [
+        "Computing Club",
+        "Executive Member",
+        "BICT"
+      ],
+      "path": "./public/content/updates/joined-bcit-computing-club.md"
     }
   ]
 }
