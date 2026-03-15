@@ -4,7 +4,7 @@ slug: school-management-api
 summary: I developed an API to manage an entire school, keeping track of students and staff details while expanding my understanding of Go, API development, and documentation.
 label: Project
 date: 2023-09-01
-status: Personal Project
+status: Stale
 featured: true
 order: 2
 github: https://github.com/SowinskiBraeden/school-management-api

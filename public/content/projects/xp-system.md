@@ -4,7 +4,7 @@ slug: xp-system
 summary: An early web application project where teachers could assign work and students could earn XP and levels, making the learning process more interactive.
 label: Project
 date: 2021-05-01
-status: Early Project
+status: Early Project - Stale
 featured: false
 order: 5
 github: https://github.com/SowinskiBraeden/XP-System

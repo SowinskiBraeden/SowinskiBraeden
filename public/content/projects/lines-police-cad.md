@@ -17,6 +17,7 @@ tags: Node.js, Express, MongoDB, Web App
 Lines Police CAD is a web-based service built with Node.js and MongoDB.
 
 I contributed new features, bug fixes, and general technical support while working within an already established product and codebase.
+While also being a core maintainer to the official Discord Bot extension for LPC, managing hosting, bug fixes, administration, and more.
 
 ## Focus Areas
 
@@ -26,4 +27,5 @@ I contributed new features, bug fixes, and general technical support while worki
 
 ## Notes
 
-This project strengthened my ability to work inside an existing system rather than only building from scratch.
+This project strengthened my ability to work inside an existing system rather than only building from scratch. 
+It taught me skills working with end users to communicate changes, fixes and engage in the general community.

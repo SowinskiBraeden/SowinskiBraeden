@@ -15,7 +15,8 @@ tags: Node.js, Discord.js, MongoDB, Analytics, Nitrado
 
 This project highlights my interest in scalable backend systems, data parsing, and user-focused tooling.
 
-It started as a smaller utility but expanded into a much larger system handling killfeeds, alarms, faction armbands, server data, and other game-related features.
+It started as a smaller utility but expanded into a much larger system handling killfeeds, alarms, faction armbands, server data, and other game-related features. Parsing thousands of lines of logs concurrently. The bot was designed for
+expandability with modulation in mind.
 
 ## Focus Areas
 

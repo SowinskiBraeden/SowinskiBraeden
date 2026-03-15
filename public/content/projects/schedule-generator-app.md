@@ -4,7 +4,7 @@ slug: schedule-generator-app
 summary: A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.
 label: Project
 date: 2023-08-01
-status: Personal Project
+status: Completed
 featured: true
 order: 1
 github: https://github.com/SowinskiBraeden/ScheduleGeneratorApp

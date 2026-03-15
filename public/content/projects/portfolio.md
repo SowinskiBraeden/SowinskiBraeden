@@ -13,7 +13,7 @@ tags: HTML, CSS, JavaScript, Portfolio
 
 ## Overview
 
-This portfolio is intentionally minimal.
+This portfolio is intentionally minimal, with some neat designs to still make it stand out a little.
 
 The goal is to keep the presentation clean and professional while still giving enough room to show technical work, current interests, and recent accomplishments.
 
