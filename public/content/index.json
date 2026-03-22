@@ -61,6 +61,28 @@
       "path": "./public/content/projects/lines-police-cad.md"
     },
     {
+      "title": "Boker",
+      "slug": "boker",
+      "type": "projects",
+      "summary": "A lightweight poker tracking web app for recording buy-ins, payouts, and session history through an append-only ledger, with player stats and analytics over time.",
+      "label": "Project",
+      "date": "2026-03-22",
+      "status": "Active",
+      "github": "https://github.com/SowinskiBraeden/boker",
+      "demo": null,
+      "featured": true,
+      "order": 4,
+      "tags": [
+        "Python",
+        "Flask",
+        "Jinja",
+        "Chart.js",
+        "CSV",
+        "Analytics"
+      ],
+      "path": "./public/content/projects/boker.md"
+    },
+    {
       "title": "DayZ Reforger Bot",
       "slug": "dayz-reforger-bot",
       "type": "projects",
