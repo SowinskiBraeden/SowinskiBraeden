@@ -169,7 +169,7 @@
       "title": "Joined the BCIT Computing Club as an Executive Member",
       "slug": "joined-bcit-computing-club",
       "type": "updates",
-      "summary": "After helping friends and existing exutives of the BCIT Computing Club, I have officially joined to help represent, and direct events such as reviews sessions, and hackathons.",
+      "summary": "After helping friends and existing executives of the BCIT Computing Club, I officially joined to help represent and support events such as review sessions and hackathons.",
       "label": "Update",
       "date": "2025-12-24",
       "status": "New Role",
@@ -180,7 +180,7 @@
       "tags": [
         "Computing Club",
         "Executive Member",
-        "BICT"
+        "BCIT"
       ],
       "path": "./public/content/updates/joined-bcit-computing-club.md"
     },

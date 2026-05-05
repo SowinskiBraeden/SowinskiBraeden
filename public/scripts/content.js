@@ -59,13 +59,50 @@
     return `<div class="${className}">${tags.map((tag) => `<span class="${className === "tag-list" ? "tag" : "entry-tag"}">${escapeHtml(tag)}</span>`).join("")}</div>`;
   };
 
+  const setMetaContent = (selector, content) => {
+    const element = document.querySelector(selector);
+    if (!element || !content) {
+      return;
+    }
+
+    element.setAttribute("content", content);
+  };
+
+  const setCanonicalHref = (href) => {
+    const canonical = document.querySelector("link[rel='canonical']");
+    if (!canonical || !href) {
+      return;
+    }
+
+    canonical.setAttribute("href", href);
+  };
+
+  const updateEntryMeta = (entry) => {
+    const baseUrl = "https://sowinski.dev";
+    const title = `${entry.title} | Braeden Sowinski`;
+    const description = entry.summary || "Project entry or update from Braeden Sowinski.";
+    const url = `${baseUrl}/entry.html?type=${encodeURIComponent(entry.type)}&slug=${encodeURIComponent(entry.slug)}`;
+    const image = "https://avatars.githubusercontent.com/u/48144618?v=4";
+
+    document.title = title;
+    setCanonicalHref(url);
+    setMetaContent("meta[name='description']", description);
+    setMetaContent("meta[property='og:title']", title);
+    setMetaContent("meta[property='og:description']", description);
+    setMetaContent("meta[property='og:url']", url);
+    setMetaContent("meta[property='og:image']", image);
+    setMetaContent("meta[name='twitter:title']", title);
+    setMetaContent("meta[name='twitter:description']", description);
+    setMetaContent("meta[name='twitter:image']", image);
+  };
+
   const renderLinks = (entry, className) => {
     const links = [];
 
     links.push(`<a class="${className} ${className}-primary" href="./entry.html?type=${encodeURIComponent(entry.type)}&slug=${encodeURIComponent(entry.slug)}">Read More</a>`);
 
     if (entry.github) {
-      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">Github</a>`);
+      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>`);
     }
 
     if (entry.demo) {
@@ -220,6 +257,8 @@
       if (!entry) {
         throw new Error("Entry not found.");
       }
+
+      updateEntryMeta(entry);
 
       const response = await fetch(entry.path);
       if (!response.ok) {
