@@ -1,13 +1,7 @@
 (function() {
-  const hero = document.querySelector(".hero-main");
   const heroShell = document.querySelector(".hero-main .hero-shell");
-  const profile = document.querySelector(".hero-main .profile");
-  const title = document.querySelector(".hero-main .svg-wrapper");
-  const descriptions = document.querySelectorAll(
-    ".hero-main .hero-description, .hero-main .hero-badges, .hero-main .hero-actions, .hero-main .social-icons"
-  );
 
-  if (!hero || !heroShell || !profile || !title) {
+  if (!heroShell) {
     return;
   }
 
@@ -24,10 +18,6 @@
   let currentY = 0;
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
-
-  const setTransform = (element, x, y) => {
-    element.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-  };
 
   const animate = () => {
     currentX += (targetX - currentX) * 0.065;
@@ -51,16 +41,6 @@
 
     heroShell.style.setProperty("--hero-shell-spot-x", `${50 + currentX * 14}%`);
     heroShell.style.setProperty("--hero-shell-spot-y", `${28 + currentY * 10}%`);
-    heroShell.style.setProperty("--hero-shell-tilt-x", `${currentY * -2.2}deg`);
-    heroShell.style.setProperty("--hero-shell-tilt-y", `${currentX * 2.6}deg`);
-
-    setTransform(profile, currentX * -4.5, currentY * -4.5);
-    setTransform(title, currentX * 2.2, currentY * 2.2);
-
-    descriptions.forEach((element, index) => {
-      const strength = 1.3 + index * 0.35;
-      setTransform(element, currentX * strength, currentY * strength);
-    });
 
     requestAnimationFrame(animate);
   };

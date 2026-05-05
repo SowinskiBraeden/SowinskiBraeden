@@ -31,7 +31,7 @@
       "github": "https://github.com/SowinskiBraeden/school-management-api",
       "demo": null,
       "featured": true,
-      "order": 2,
+      "order": 6,
       "tags": [
         "Go",
         "API",
@@ -51,7 +51,7 @@
       "github": "https://github.com/LinesMerrill/police-cad",
       "demo": "https://www.linespolice-cad.com/",
       "featured": false,
-      "order": 3,
+      "order": 4,
       "tags": [
         "Node.js",
         "Express",
@@ -71,7 +71,7 @@
       "github": "https://github.com/SowinskiBraeden/boker",
       "demo": null,
       "featured": true,
-      "order": 4,
+      "order": 2,
       "tags": [
         "Python",
         "Flask",
@@ -93,7 +93,7 @@
       "github": "https://github.com/SowinskiBraeden/dayz-reforger",
       "demo": null,
       "featured": true,
-      "order": 4,
+      "order": 3,
       "tags": [
         "Node.js",
         "Discord.js",
@@ -114,7 +114,7 @@
       "github": "https://github.com/SowinskiBraeden/XP-System",
       "demo": null,
       "featured": false,
-      "order": 5,
+      "order": 7,
       "tags": [
         "Web App",
         "Education Tech",
@@ -133,7 +133,7 @@
       "github": "https://github.com/SowinskiBraeden/SowinskiBraeden",
       "demo": null,
       "featured": false,
-      "order": 6,
+      "order": 5,
       "tags": [
         "HTML",
         "CSS",
@@ -183,6 +183,26 @@
         "BICT"
       ],
       "path": "./public/content/updates/joined-bcit-computing-club.md"
+    },
+    {
+      "title": "Appointed President of Coding 4 All (C4A)",
+      "slug": "appointed-president-c4a",
+      "type": "updates",
+      "summary": "Appointed to lead Coding 4 All at BCIT, helping guide student events, technical community-building, and collaboration across computing initiatives.",
+      "label": "Update",
+      "date": "2026-05-04",
+      "status": "Leadership",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "order": 20,
+      "tags": [
+        "Leadership",
+        "BCIT",
+        "Community",
+        "C4A"
+      ],
+      "path": "./public/content/updates/appointed-president-c4a.md"
     }
   ]
 }

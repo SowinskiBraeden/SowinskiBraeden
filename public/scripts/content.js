@@ -78,9 +78,10 @@
   const createCard = (entry) => {
     const formattedDate = formatDate(entry.date);
     const featuredClass = entry.featured ? " featured" : "";
+    const anchorId = entry.slug ? ` id="${escapeHtml(entry.slug)}"` : "";
 
     return `
-      <article class="content-card${featuredClass}">
+      <article class="content-card${featuredClass}"${anchorId}>
         <div class="card-meta">
           <span class="card-kicker">${escapeHtml(entry.label || entry.type)}</span>
           ${formattedDate ? `<span class="card-date">${escapeHtml(formattedDate)}</span>` : ""}
@@ -107,11 +108,83 @@
     container.innerHTML = entries.map(createCard).join("");
   };
 
+  const initProjectsToggle = (entries) => {
+    const projectsGrid = document.getElementById("projects-grid");
+    const toggleShell = document.getElementById("projects-toggle-shell");
+    const toggleButton = document.getElementById("projects-toggle");
+    const defaultVisibleCount = 6;
+
+    if (!projectsGrid || !toggleShell || !toggleButton) {
+      return;
+    }
+
+    const cards = Array.from(projectsGrid.querySelectorAll(".content-card"));
+    if (entries.length <= defaultVisibleCount || cards.length <= defaultVisibleCount) {
+      toggleShell.hidden = true;
+      return;
+    }
+
+    const setExpandedState = (expanded) => {
+      cards.forEach((card, index) => {
+        card.classList.toggle("is-hidden", !expanded && index >= defaultVisibleCount);
+      });
+
+      toggleButton.textContent = expanded ? "Show Fewer Projects" : "Show More Projects";
+      toggleButton.setAttribute("aria-expanded", String(expanded));
+    };
+
+    toggleShell.hidden = false;
+    setExpandedState(false);
+
+    toggleButton.addEventListener("click", () => {
+      const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+      setExpandedState(!expanded);
+    });
+  };
+
+  const compareByNewestDate = (left, right) => {
+    const leftTime = left.date ? Date.parse(`${left.date}T00:00:00`) : Number.NEGATIVE_INFINITY;
+    const rightTime = right.date ? Date.parse(`${right.date}T00:00:00`) : Number.NEGATIVE_INFINITY;
+
+    if (leftTime !== rightTime) {
+      return rightTime - leftTime;
+    }
+
+    const leftOrder = Number.isFinite(left.order) ? left.order : Number.MAX_SAFE_INTEGER;
+    const rightOrder = Number.isFinite(right.order) ? right.order : Number.MAX_SAFE_INTEGER;
+
+    if (leftOrder !== rightOrder) {
+      return leftOrder - rightOrder;
+    }
+
+    return String(left.title || "").localeCompare(String(right.title || ""));
+  };
+
+  const compareByPriorityOrder = (left, right) => {
+    const leftOrder = Number.isFinite(left.order) ? left.order : Number.MAX_SAFE_INTEGER;
+    const rightOrder = Number.isFinite(right.order) ? right.order : Number.MAX_SAFE_INTEGER;
+
+    if (leftOrder !== rightOrder) {
+      return leftOrder - rightOrder;
+    }
+
+    const leftTime = left.date ? Date.parse(`${left.date}T00:00:00`) : Number.NEGATIVE_INFINITY;
+    const rightTime = right.date ? Date.parse(`${right.date}T00:00:00`) : Number.NEGATIVE_INFINITY;
+
+    if (leftTime !== rightTime) {
+      return rightTime - leftTime;
+    }
+
+    return String(left.title || "").localeCompare(String(right.title || ""));
+  };
+
   const initListPage = async () => {
     try {
       const index = await getIndex();
-      renderSection("projects-grid", index.projects || [], "No projects added yet.");
-      renderSection("updates-grid", index.updates || [], "No updates added yet.");
+      const sortedProjects = [...(index.projects || [])].sort(compareByPriorityOrder);
+      renderSection("projects-grid", sortedProjects, "No projects added yet.");
+      initProjectsToggle(sortedProjects);
+      renderSection("updates-grid", [...(index.updates || [])].sort(compareByNewestDate), "No updates added yet.");
     } catch (error) {
       renderSection("projects-grid", [], error.message);
       renderSection("updates-grid", [], error.message);

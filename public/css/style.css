@@ -203,10 +203,8 @@ ul {
 }
 
 .logo a img {
-  display: inline;
-  vertical-align: middle;
+  display: block;
   pointer-events: none;
-  transform: translate(0, -10%);
   border-radius: 6pt;
   margin-inline-end: 8pt;
 }
@@ -313,16 +311,6 @@ ul {
   object-fit: cover;
   border: 4px solid rgba(235, 82, 52, 0.18);
   box-shadow: var(--shadow);
-}
-
-.hero-main .profile,
-.hero-main .svg-wrapper,
-.hero-main .hero-description,
-.hero-main .hero-badges,
-.hero-main .hero-actions,
-.hero-main .social-icons {
-  will-change: transform;
-  transition: transform 0.18s ease-out;
 }
 
 .hero-badges {
@@ -660,8 +648,6 @@ body.menu-open .overlay * {
 :root {
   --hero-shell-spot-x: 50%;
   --hero-shell-spot-y: 28%;
-  --hero-shell-tilt-x: 0deg;
-  --hero-shell-tilt-y: 0deg;
 }
 
 body {
@@ -725,7 +711,7 @@ button#theme-toggle {
   backdrop-filter: blur(22px) saturate(135%);
   -webkit-backdrop-filter: blur(22px) saturate(135%);
   isolation: isolate;
-  transform: perspective(1200px) rotateX(var(--hero-shell-tilt-x)) rotateY(var(--hero-shell-tilt-y));
+  transform: none;
   transition: transform 0.18s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
 }
 

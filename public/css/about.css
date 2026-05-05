@@ -41,9 +41,30 @@
 section {
   transition: 0.8s;
   padding: 24px;
-  background-color: var(--menu-text-bg);
-  border-radius: 18px;
-  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    linear-gradient(135deg, rgba(235, 82, 52, 0.05), transparent 48%),
+    rgba(20, 21, 24, 0.36);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+}
+
+body.light section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.42)),
+    linear-gradient(135deg, rgba(235, 82, 52, 0.04), transparent 48%),
+    rgba(255, 255, 255, 0.34);
+  border-color: rgba(255, 255, 255, 0.52);
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.22);
 }
 
 section h3 {
@@ -74,10 +95,20 @@ section h3 {
 }
 
 .profile-sub {
-  background-color: rgba(0, 0, 0, 0.62);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.42)),
+    rgba(0, 0, 0, 0.36);
   padding: 16px;
   border-radius: 14px;
   margin-top: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.profile-sub .profile-name,
+.profile-sub .profile-role,
+.profile-sub .profile-focus {
+  color: #f4f1ed;
 }
 
 .skills-list {
@@ -100,6 +131,30 @@ dt {
 
 dd {
   margin-left: 0;
+  color: var(--muted);
+}
+
+.honor-inline-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.honor-subitem {
+  margin-top: 10px;
+  padding-left: 14px;
+}
+
+.honor-subitem__label {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.honor-subitem__text {
+  margin: 4px 0 0;
   color: var(--muted);
 }
 
