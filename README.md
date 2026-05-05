@@ -20,11 +20,6 @@
 
 ---
 
-### Highlights
-- President of Coding 4 All at BCIT
-- Third-place finish at the inaugural Red Team Hackathon with Team Cerberus Gate
-- Portfolio and recent work: [sowinski.dev](https://sowinski.dev)
-
 ### Languages
 [![C](https://img.shields.io/badge/c-black?style=for-the-badge&logo=c)](https://github.com/SowinskiBraeden)
 [![Go](https://img.shields.io/badge/go-black?style=for-the-badge&logo=go)](https://github.com/SowinskiBraeden)
