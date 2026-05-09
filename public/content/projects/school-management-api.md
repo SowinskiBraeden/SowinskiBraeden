@@ -5,8 +5,8 @@ summary: I developed an API to manage an entire school, keeping track of student
 label: Project
 date: 2023-09-01
 status: Stale
-featured: true
-order: 2
+featured: false
+order: 7
 github: https://github.com/SowinskiBraeden/school-management-api
 tags: Go, API, Documentation, Education Tech
 ---

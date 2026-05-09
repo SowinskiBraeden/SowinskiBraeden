@@ -6,7 +6,7 @@ label: Project
 date: 2024-11-08
 status: Active
 featured: true
-order: 4
+order: 3
 github: https://github.com/SowinskiBraeden/dayz-reforger
 tags: Node.js, Discord.js, MongoDB, Analytics, Nitrado
 ---

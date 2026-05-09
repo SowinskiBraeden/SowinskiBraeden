@@ -6,7 +6,7 @@ label: Project
 date: 2021-05-01
 status: Early Project - Stale
 featured: false
-order: 5
+order: 8
 github: https://github.com/SowinskiBraeden/XP-System
 tags: Web App, Education Tech, Gamification
 ---

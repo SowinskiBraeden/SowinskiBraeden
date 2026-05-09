@@ -6,7 +6,7 @@ label: Project
 date: 2026-03-22
 status: Active
 featured: true
-order: 4
+order: 2
 github: https://github.com/SowinskiBraeden/boker
 tags: Python, Flask, Jinja, Chart.js, CSV, Analytics
 ---
