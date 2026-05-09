@@ -280,7 +280,7 @@
           <p class="entry-summary">${escapeHtml(entry.summary || "")}</p>
           ${renderTags(entry.tags || [], "entry-tag-list")}
           <div class="entry-links">
-            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">Github</a>` : ""}
+            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
             ${entry.demo ? `<a class="inline-button inline-button-primary" href="${escapeHtml(entry.demo)}" target="_blank" rel="noopener noreferrer">Live</a>` : ""}
           </div>
         </div>
