@@ -249,10 +249,18 @@ ul {
   position: absolute;
 }
 
+.hero-nameplate {
+  position: relative;
+  width: 320pt;
+  height: 64pt;
+  margin: 0 auto;
+}
+
 .svg-wrapper {
   margin: 0 auto;
   width: 320pt;
-  position: relative;
+  position: absolute;
+  inset: 0;
   height: 64pt;
   overflow-y: hidden;
 }
@@ -277,13 +285,16 @@ ul {
   transition: 0.8s;
   font-size: 30px;
   font-weight: 900;
-  margin-bottom: 10pt;
-  transform: translate(0, -64pt);
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name:hover,
-.des:hover,
-.mobile-name:hover {
+.des:hover {
   color: var(--secondary);
   cursor: default;
 }
@@ -519,13 +530,6 @@ body:not(.light) #sun {
   appearance: none;
 }
 
-.mobile-name {
-  display: none;
-  transition: 0.8s;
-  font-size: 30px;
-  font-weight: 900;
-}
-
 body.menu-open {
   overflow: hidden;
 }
@@ -581,8 +585,18 @@ body.menu-open .overlay * {
     display: none;
   }
 
-  .menu,
-  .mobile-name {
+  .menu {
+    display: block;
+  }
+
+  .hero-nameplate {
+    width: auto;
+    height: auto;
+    margin-top: 2pt;
+  }
+
+  .name {
+    position: static;
     display: block;
   }
 
