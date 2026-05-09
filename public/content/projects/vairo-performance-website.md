@@ -3,7 +3,7 @@ title: Vairo Performance Website
 slug: vairo-performance-website
 summary: A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.
 label: Project
-date: 2026-05-08
+date: 2026-03-01
 status: Client Work
 featured: true
 order: 4
