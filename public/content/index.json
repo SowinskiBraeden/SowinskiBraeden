@@ -104,6 +104,26 @@
       "path": "./public/content/projects/dayz-reforger-bot.md"
     },
     {
+      "title": "Vairo Performance Website",
+      "slug": "vairo-performance-website",
+      "type": "projects",
+      "summary": "A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.",
+      "label": "Project",
+      "date": "2026-05-08",
+      "status": "Client Work",
+      "github": null,
+      "demo": "https://vairo-performance.com",
+      "featured": true,
+      "order": 4,
+      "tags": [
+        "Freelance",
+        "Web Design",
+        "Domain Setup",
+        "Client Work"
+      ],
+      "path": "./public/content/projects/vairo-performance-website.md"
+    },
+    {
       "title": "XP-System",
       "slug": "xp-system",
       "type": "projects",
