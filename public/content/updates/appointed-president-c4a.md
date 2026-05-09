@@ -6,7 +6,7 @@ label: Update
 date: 2026-05-04
 status: Leadership
 featured: true
-order: 20
+order: 1
 tags: Leadership, BCIT, Community, C4A
 ---
 

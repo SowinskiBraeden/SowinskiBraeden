@@ -6,7 +6,7 @@ label: Update
 date: 2025-12-24
 status: New Role
 featured: true
-order: 2
+order: 3
 tags: Computing Club, Coding 4 All, Executive Member, BCIT
 ---
 

@@ -175,7 +175,7 @@
       "github": null,
       "demo": null,
       "featured": true,
-      "order": 1,
+      "order": 2,
       "tags": [
         "Hackathon",
         "RF",
@@ -196,7 +196,7 @@
       "github": null,
       "demo": null,
       "featured": true,
-      "order": 2,
+      "order": 3,
       "tags": [
         "Computing Club",
         "Executive Member",
@@ -215,7 +215,7 @@
       "github": null,
       "demo": null,
       "featured": true,
-      "order": 20,
+      "order": 1,
       "tags": [
         "Leadership",
         "BCIT",

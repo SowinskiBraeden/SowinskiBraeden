@@ -6,7 +6,7 @@ label: Update
 date: 2026-03-12
 status: Achievement
 featured: true
-order: 1
+order: 2
 tags: Hackathon, RF, Machine Learning, Geolocation, BCIT
 ---
 
