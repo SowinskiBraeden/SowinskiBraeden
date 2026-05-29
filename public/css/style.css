@@ -318,7 +318,7 @@ ul {
     transition: 0.8s;
     font-size: 30px;
     font-weight: 900;
-    margin-bottom: 10pt;
+    margin: 16pt 0 10pt;
     transform: translate(0, -64pt);
 }
 
@@ -624,13 +624,23 @@ body.menu-open .overlay * {
 
 @media only screen and (max-width: 740pt) {
     .nav__links li a,
-    .svg-wrapper#main-wrapper {
+    .svg-wrapper#main-wrapper svg {
         display: none;
     }
 
-    .menu,
-    .mobile-name {
+    .menu {
         display: block;
+    }
+
+    .svg-wrapper#main-wrapper {
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .svg-wrapper#main-wrapper .name {
+        margin: 2pt 0 10pt;
+        transform: none;
     }
 
     .logo {

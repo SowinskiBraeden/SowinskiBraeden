@@ -77,6 +77,41 @@
     canonical.setAttribute("href", href);
   };
 
+  const setEntryJsonLd = (entry, url, image) => {
+    let script = document.getElementById("entry-jsonld");
+
+    if (!script) {
+      script = document.createElement("script");
+      script.id = "entry-jsonld";
+      script.type = "application/ld+json";
+      document.head.appendChild(script);
+    }
+
+    script.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${url}#article`,
+      "url": url,
+      "headline": entry.title,
+      "description": entry.summary || "Project entry or update from Braeden Sowinski.",
+      "datePublished": entry.date || undefined,
+      "dateModified": entry.date || undefined,
+      "image": image,
+      "author": {
+        "@id": "https://sowinski.dev/#person",
+        "name": "Braeden Sowinski",
+        "url": "https://sowinski.dev/"
+      },
+      "publisher": {
+        "@id": "https://sowinski.dev/#person"
+      },
+      "mainEntityOfPage": url,
+      "isPartOf": {
+        "@id": "https://sowinski.dev/#website"
+      }
+    });
+  };
+
   const updateEntryMeta = (entry) => {
     const baseUrl = "https://sowinski.dev";
     const title = `${entry.title} | Braeden Sowinski`;
@@ -94,6 +129,7 @@
     setMetaContent("meta[name='twitter:title']", title);
     setMetaContent("meta[name='twitter:description']", description);
     setMetaContent("meta[name='twitter:image']", image);
+    setEntryJsonLd(entry, url, image);
   };
 
   const renderLinks = (entry, className) => {
