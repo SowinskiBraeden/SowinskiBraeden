@@ -21,15 +21,15 @@
       "path": "./public/content/projects/schedule-generator-app.md"
     },
     {
-      "title": "Boker",
-      "slug": "boker",
+      "title": "myboker.org",
+      "slug": "myboker-org",
       "type": "projects",
-      "summary": "A lightweight poker tracking web app for recording buy-ins, payouts, and session history through an append-only ledger, with player stats and analytics over time.",
+      "summary": "A home poker league tracker with player stats, leaderboards, session history, and settlement tracking — built around an append-only event ledger and now live as a public web app.",
       "label": "Project",
-      "date": "2026-03-22",
+      "date": "2026-06-28",
       "status": "Active",
-      "github": "https://github.com/SowinskiBraeden/boker",
-      "demo": null,
+      "github": null,
+      "demo": "https://myboker.org",
       "featured": true,
       "order": 2,
       "tags": [
@@ -37,10 +37,10 @@
         "Flask",
         "Jinja",
         "Chart.js",
-        "CSV",
+        "PostgreSQL",
         "Analytics"
       ],
-      "path": "./public/content/projects/boker.md"
+      "path": "./public/content/projects/myboker-org.md"
     },
     {
       "title": "DayZ Reforger Bot",
