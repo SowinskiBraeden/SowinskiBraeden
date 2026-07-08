@@ -1,24 +1,26 @@
 {
   "projects": [
     {
-      "title": "Schedule Generator App",
-      "slug": "schedule-generator-app",
+      "title": "Reforger Mods API",
+      "slug": "reforger-mods-api",
       "type": "projects",
-      "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
+      "summary": "A public, unofficial REST API for Arma Reforger Workshop metadata, built with caching, background refresh jobs, rate limiting, and production reliability in mind.",
       "label": "Project",
-      "date": "2023-08-01",
-      "status": "Completed",
-      "github": "https://github.com/SowinskiBraeden/ScheduleGeneratorApp",
-      "demo": null,
+      "date": "2026-07-06",
+      "status": "Active",
+      "github": "https://github.com/SowinskiBraeden/ReforgerWorkshopAPI",
+      "demo": "https://api.reforgermods.net",
       "featured": true,
       "order": 1,
       "tags": [
-        "Python",
-        "Desktop App",
-        "Scheduling",
-        "Data Processing"
+        "Go",
+        "REST API",
+        "Caching",
+        "Web Scraping",
+        "Observability",
+        "Documentation"
       ],
-      "path": "./public/content/projects/schedule-generator-app.md"
+      "path": "./public/content/projects/reforger-mods-api.md"
     },
     {
       "title": "myboker.org",
@@ -28,7 +30,7 @@
       "label": "Project",
       "date": "2026-06-28",
       "status": "Active",
-      "github": null,
+      "github": "https://github.com/SowinskiBraeden/boker",
       "demo": "https://myboker.org",
       "featured": true,
       "order": 2,
@@ -43,6 +45,21 @@
       "path": "./public/content/projects/myboker-org.md"
     },
     {
+      "title": "Schedule Generator App",
+      "slug": "schedule-generator-app",
+      "type": "projects",
+      "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
+      "label": "Project",
+      "date": "2023-08-01",
+      "status": "Completed",
+      "github": "https://github.com/SowinskiBraeden/ScheduleGeneratorApp",
+      "demo": null,
+      "featured": true,
+      "order": 3,
+      "tags": ["Python", "Desktop App", "Scheduling", "Data Processing"],
+      "path": "./public/content/projects/schedule-generator-app.md"
+    },
+    {
       "title": "DayZ Reforger Bot",
       "slug": "dayz-reforger-bot",
       "type": "projects",
@@ -53,35 +70,9 @@
       "github": "https://github.com/SowinskiBraeden/dayz-reforger",
       "demo": null,
       "featured": true,
-      "order": 3,
-      "tags": [
-        "Node.js",
-        "Discord.js",
-        "MongoDB",
-        "Analytics",
-        "Nitrado"
-      ],
-      "path": "./public/content/projects/dayz-reforger-bot.md"
-    },
-    {
-      "title": "Vairo Performance Website",
-      "slug": "vairo-performance-website",
-      "type": "projects",
-      "summary": "A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.",
-      "label": "Project",
-      "date": "2026-03-01",
-      "status": "Client Work",
-      "github": null,
-      "demo": "https://vairo-performance.com",
-      "featured": true,
       "order": 4,
-      "tags": [
-        "Freelance",
-        "Web Design",
-        "Domain Setup",
-        "Client Work"
-      ],
-      "path": "./public/content/projects/vairo-performance-website.md"
+      "tags": ["Node.js", "Discord.js", "MongoDB", "Analytics", "Nitrado"],
+      "path": "./public/content/projects/dayz-reforger-bot.md"
     },
     {
       "title": "Lines Police CAD",
@@ -95,12 +86,7 @@
       "demo": "https://www.linespolice-cad.com/",
       "featured": false,
       "order": 5,
-      "tags": [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Web App"
-      ],
+      "tags": ["Node.js", "Express", "MongoDB", "Web App"],
       "path": "./public/content/projects/lines-police-cad.md"
     },
     {
@@ -115,13 +101,23 @@
       "demo": null,
       "featured": false,
       "order": 6,
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Portfolio"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript", "Portfolio"],
       "path": "./public/content/projects/portfolio.md"
+    },
+    {
+      "title": "Vairo Performance Website",
+      "slug": "vairo-performance-website",
+      "type": "projects",
+      "summary": "A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.",
+      "label": "Project",
+      "date": "2026-03-01",
+      "status": "Client Work",
+      "github": null,
+      "demo": "https://vairo-performance.com",
+      "featured": false,
+      "order": 7,
+      "tags": ["Freelance", "Web Design", "Domain Setup", "Client Work"],
+      "path": "./public/content/projects/vairo-performance-website.md"
     },
     {
       "title": "School Management API",
@@ -134,13 +130,8 @@
       "github": "https://github.com/SowinskiBraeden/school-management-api",
       "demo": null,
       "featured": false,
-      "order": 7,
-      "tags": [
-        "Go",
-        "API",
-        "Documentation",
-        "Education Tech"
-      ],
+      "order": 8,
+      "tags": ["Go", "API", "Documentation", "Education Tech"],
       "path": "./public/content/projects/school-management-api.md"
     },
     {
@@ -154,12 +145,8 @@
       "github": "https://github.com/SowinskiBraeden/XP-System",
       "demo": null,
       "featured": false,
-      "order": 8,
-      "tags": [
-        "Web App",
-        "Education Tech",
-        "Gamification"
-      ],
+      "order": 9,
+      "tags": ["Web App", "Education Tech", "Gamification"],
       "path": "./public/content/projects/xp-system.md"
     }
   ],
@@ -176,13 +163,7 @@
       "demo": null,
       "featured": true,
       "order": 2,
-      "tags": [
-        "Hackathon",
-        "RF",
-        "Machine Learning",
-        "Geolocation",
-        "BCIT"
-      ],
+      "tags": ["Hackathon", "RF", "Machine Learning", "Geolocation", "BCIT"],
       "path": "./public/content/updates/red-team-hackathon-2026.md"
     },
     {
@@ -197,11 +178,7 @@
       "demo": null,
       "featured": true,
       "order": 3,
-      "tags": [
-        "Computing Club",
-        "Executive Member",
-        "BCIT"
-      ],
+      "tags": ["Computing Club", "Executive Member", "BCIT"],
       "path": "./public/content/updates/joined-bcit-computing-club.md"
     },
     {
@@ -216,12 +193,7 @@
       "demo": null,
       "featured": true,
       "order": 1,
-      "tags": [
-        "Leadership",
-        "BCIT",
-        "Community",
-        "C4A"
-      ],
+      "tags": ["Leadership", "BCIT", "Community", "C4A"],
       "path": "./public/content/updates/appointed-president-c4a.md"
     }
   ]

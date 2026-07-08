@@ -137,12 +137,10 @@
 
     links.push(`<a class="${className} ${className}-primary" href="./entry.html?type=${encodeURIComponent(entry.type)}&slug=${encodeURIComponent(entry.slug)}">Read More</a>`);
 
-    if (entry.github) {
-      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>`);
-    }
-
     if (entry.demo) {
       links.push(`<a class="${className}" href="${escapeHtml(entry.demo)}" target="_blank" rel="noopener noreferrer">Live</a>`);
+    } else if (entry.github) {
+      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>`);
     }
 
     return `<div class="${className.replace("card-link", "card-links")}">${links.join("")}</div>`;
@@ -316,8 +314,8 @@
           <p class="entry-summary">${escapeHtml(entry.summary || "")}</p>
           ${renderTags(entry.tags || [], "entry-tag-list")}
           <div class="entry-links">
-            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
             ${entry.demo ? `<a class="inline-button inline-button-primary" href="${escapeHtml(entry.demo)}" target="_blank" rel="noopener noreferrer">Live</a>` : ""}
+            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
           </div>
         </div>
         <article class="entry-content">
