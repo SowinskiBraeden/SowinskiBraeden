@@ -134,13 +134,14 @@
 
   const renderLinks = (entry, className) => {
     const links = [];
+    const sourceLabel = entry.github && entry.github.includes("git.sowinski.dev") ? "Gitea" : "GitHub";
 
     links.push(`<a class="${className} ${className}-primary" href="./entry.html?type=${encodeURIComponent(entry.type)}&slug=${encodeURIComponent(entry.slug)}">Read More</a>`);
 
     if (entry.demo) {
       links.push(`<a class="${className}" href="${escapeHtml(entry.demo)}" target="_blank" rel="noopener noreferrer">Live</a>`);
     } else if (entry.github) {
-      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>`);
+      links.push(`<a class="${className}" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>`);
     }
 
     return `<div class="${className.replace("card-link", "card-links")}">${links.join("")}</div>`;
@@ -315,7 +316,7 @@
           ${renderTags(entry.tags || [], "entry-tag-list")}
           <div class="entry-links">
             ${entry.demo ? `<a class="inline-button inline-button-primary" href="${escapeHtml(entry.demo)}" target="_blank" rel="noopener noreferrer">Live</a>` : ""}
-            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">GitHub</a>` : ""}
+            ${entry.github ? `<a class="inline-button" href="${escapeHtml(entry.github)}" target="_blank" rel="noopener noreferrer">${entry.github.includes("git.sowinski.dev") ? "Gitea" : "GitHub"}</a>` : ""}
           </div>
         </div>
         <article class="entry-content">

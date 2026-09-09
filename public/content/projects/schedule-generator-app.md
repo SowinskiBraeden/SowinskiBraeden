@@ -7,7 +7,7 @@ date: 2023-08-01
 status: Completed
 featured: true
 order: 1
-github: https://github.com/SowinskiBraeden/ScheduleGeneratorApp
+github: https://git.sowinski.dev/SowinskiBraeden/ScheduleGeneratorApp
 tags: Python, Desktop App, Scheduling, Data Processing
 ---
 

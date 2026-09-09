@@ -7,7 +7,7 @@ date: 2023-09-01
 status: Stale
 featured: false
 order: 7
-github: https://github.com/SowinskiBraeden/school-management-api
+github: https://git.sowinski.dev/SowinskiBraeden/school-management-api
 tags: Go, API, Documentation, Education Tech
 ---
 

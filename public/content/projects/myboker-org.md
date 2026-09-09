@@ -7,7 +7,7 @@ date: 2026-06-28
 status: Active
 featured: true
 order: 2
-github: https://github.com/SowinskiBraeden/boker
+github: https://git.sowinski.dev/SowinskiBraeden/boker
 live: https://myboker.org
 tags: Python, Flask, Jinja, Chart.js, PostgreSQL, Analytics
 ---

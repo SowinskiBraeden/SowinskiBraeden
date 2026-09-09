@@ -7,7 +7,7 @@ date: 2026-03-14
 status: Active
 featured: false
 order: 6
-github: https://github.com/SowinskiBraeden/SowinskiBraeden
+github: https://git.sowinski.dev/SowinskiBraeden/SowinskiBraeden
 tags: HTML, CSS, JavaScript, Portfolio
 ---
 
