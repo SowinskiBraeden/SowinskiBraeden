@@ -18,32 +18,32 @@ I like building backend services, APIs, developer tools, and self-hosted systems
 
 ## Skills
 
-**Languages**
+### Languages
+[![C](https://img.shields.io/badge/c-black?style=for-the-badge&logo=c)](https://github.com/SowinskiBraeden)
+[![Go](https://img.shields.io/badge/go-black?style=for-the-badge&logo=go)](https://github.com/SowinskiBraeden)
+[![Java](https://img.shields.io/badge/java-black?style=for-the-badge&logo=openjdk)](https://github.com/SowinskiBraeden)
+[![JavaScript](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)](https://github.com/SowinskiBraeden)
+[![TypeScript](https://img.shields.io/badge/typescript-black?style=for-the-badge&logo=typescript)](https://github.com/SowinskiBraeden)
+[![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python)](https://github.com/SowinskiBraeden)
+[![OCaml](https://img.shields.io/badge/ocaml-black?style=for-the-badge&logo=ocaml)](https://github.com/SowinskiBraeden)
+[![SQL](https://img.shields.io/badge/sql-black?style=for-the-badge&logo=postgresql)](https://github.com/SowinskiBraeden)
+[![Bash](https://img.shields.io/badge/bash-black?style=for-the-badge&logo=gnubash)](https://github.com/SowinskiBraeden)
 
-![Go](https://img.shields.io/badge/Go-111111?style=for-the-badge&logo=go)
-![Python](https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python)
-![TypeScript](https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript)
-![Java](https://img.shields.io/badge/Java-111111?style=for-the-badge&logo=openjdk)
-![C](https://img.shields.io/badge/C-111111?style=for-the-badge&logo=c)
-![SQL](https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=postgresql)
-![Bash](https://img.shields.io/badge/Bash-111111?style=for-the-badge&logo=gnubash)
+### Technologies and Tools
+[![Node.js](https://img.shields.io/badge/node.js-black?style=for-the-badge&logo=node.js)](https://github.com/SowinskiBraeden)
+[![PostgreSQL](https://img.shields.io/badge/postgresql-black?style=for-the-badge&logo=postgresql)](https://github.com/SowinskiBraeden)
+[![MongoDB](https://img.shields.io/badge/mongodb-black?style=for-the-badge&logo=mongodb)](https://github.com/SowinskiBraeden)
+[![SQLite](https://img.shields.io/badge/sqlite-black?style=for-the-badge&logo=sqlite)](https://github.com/SowinskiBraeden)
+[![Docker](https://img.shields.io/badge/docker-black?style=for-the-badge&logo=docker)](https://github.com/SowinskiBraeden)
+[![Git](https://img.shields.io/badge/git-black?style=for-the-badge&logo=git)](https://github.com/SowinskiBraeden)
+[![Nginx](https://img.shields.io/badge/nginx-black?style=for-the-badge&logo=nginx)](https://github.com/SowinskiBraeden)
+[![Gitea](https://img.shields.io/badge/gitea-black?style=for-the-badge&logo=gitea)](https://github.com/SowinskiBraeden)
+[![Grafana](https://img.shields.io/badge/grafana-black?style=for-the-badge&logo=grafana)](https://github.com/SowinskiBraeden)
 
-**Tooling and services**
-
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux)
-![Git](https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git)
-![Docker](https://img.shields.io/badge/Docker-111111?style=for-the-badge&logo=docker)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql)
-![SQLite](https://img.shields.io/badge/SQLite-111111?style=for-the-badge&logo=sqlite)
-![Nginx](https://img.shields.io/badge/Nginx-111111?style=for-the-badge&logo=nginx)
-![Gitea](https://img.shields.io/badge/Gitea-111111?style=for-the-badge&logo=gitea)
-![Grafana](https://img.shields.io/badge/Grafana-111111?style=for-the-badge&logo=grafana)
-
-**Areas**
-
-| Backend development | Systems programming | Self-hosting |
-| --- | --- | --- |
-| APIs, databases, service design | C, Linux, networking fundamentals | servers, deployments, monitoring |
+### Operating Systems
+[![Debian](https://img.shields.io/badge/debian-black?style=for-the-badge&logo=debian)](https://github.com/SowinskiBraeden)
+[![Linux](https://img.shields.io/badge/linux-black?style=for-the-badge&logo=linux)](https://github.com/SowinskiBraeden)
+[![Windows](https://img.shields.io/badge/windows-black?style=for-the-badge&logo=windows)](https://github.com/SowinskiBraeden)
 
 ## Learning
 
