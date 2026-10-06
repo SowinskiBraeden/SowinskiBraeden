@@ -1,32 +1,53 @@
 {
   "projects": [
     {
-      "title": "Reforger Mods API",
+      "title": "ReforgerMods.net",
       "slug": "reforger-mods-api",
       "type": "projects",
-      "summary": "A public, unofficial REST API for Arma Reforger Workshop metadata, built with caching, background refresh jobs, rate limiting, and production reliability in mind.",
+      "summary": "An API and data platform for the Arma Reforger ecosystem. I built and operate a production API handling 100K+ requests a day, with API key auth, rate limiting, caching, monitoring, third-party integrations, and paying customers.",
       "label": "Project",
       "date": "2026-07-06",
       "status": "Active",
-      "github": "https://github.com/SowinskiBraeden/ReforgerWorkshopAPI",
-      "demo": "https://api.reforgermods.net",
+      "github": null,
+      "demo": "https://reforgermods.net",
       "featured": true,
       "order": 1,
       "tags": [
         "Go",
         "REST API",
         "Caching",
-        "Web Scraping",
-        "Observability",
-        "Documentation"
+        "Rate Limiting",
+        "Stripe",
+        "Cloudflare",
+        "Linux"
       ],
       "path": "./public/content/projects/reforger-mods-api.md"
+    },
+    {
+      "title": "Schedule Generator App",
+      "slug": "schedule-generator-app",
+      "type": "projects",
+      "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
+      "label": "Project",
+      "date": "2023-08-01",
+      "status": "Completed",
+      "github": "https://git.sowinski.dev/SowinskiBraeden/ScheduleGeneratorApp",
+      "demo": null,
+      "featured": true,
+      "order": 1,
+      "tags": [
+        "Python",
+        "Desktop App",
+        "Scheduling",
+        "Data Processing"
+      ],
+      "path": "./public/content/projects/schedule-generator-app.md"
     },
     {
       "title": "myboker.org",
       "slug": "myboker-org",
       "type": "projects",
-      "summary": "A home poker league tracker with player stats, leaderboards, session history, and settlement tracking — built around an append-only event ledger and now live as a public web app.",
+      "summary": "A home poker league tracker with player stats, leaderboards, session history, and settlement tracking. Built around an append-only event ledger and now live as a public web app.",
       "label": "Project",
       "date": "2026-06-28",
       "status": "Active",
@@ -45,21 +66,6 @@
       "path": "./public/content/projects/myboker-org.md"
     },
     {
-      "title": "Schedule Generator App",
-      "slug": "schedule-generator-app",
-      "type": "projects",
-      "summary": "A desktop application to interact with my schedule generator algorithm. The algorithm is written in Python and generates master and student timetables.",
-      "label": "Project",
-      "date": "2023-08-01",
-      "status": "Completed",
-      "github": "https://git.sowinski.dev/SowinskiBraeden/ScheduleGeneratorApp",
-      "demo": null,
-      "featured": true,
-      "order": 3,
-      "tags": ["Python", "Desktop App", "Scheduling", "Data Processing"],
-      "path": "./public/content/projects/schedule-generator-app.md"
-    },
-    {
       "title": "DayZ Reforger Bot",
       "slug": "dayz-reforger-bot",
       "type": "projects",
@@ -70,9 +76,35 @@
       "github": "https://git.sowinski.dev/SowinskiBraeden/dayz-reforger",
       "demo": null,
       "featured": true,
-      "order": 4,
-      "tags": ["Node.js", "Discord.js", "MongoDB", "Analytics", "Nitrado"],
+      "order": 3,
+      "tags": [
+        "Node.js",
+        "Discord.js",
+        "MongoDB",
+        "Analytics",
+        "Nitrado"
+      ],
       "path": "./public/content/projects/dayz-reforger-bot.md"
+    },
+    {
+      "title": "Vairo Performance Website",
+      "slug": "vairo-performance-website",
+      "type": "projects",
+      "summary": "A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.",
+      "label": "Project",
+      "date": "2026-03-01",
+      "status": "Client Work",
+      "github": null,
+      "demo": "https://vairo-performance.com",
+      "featured": true,
+      "order": 4,
+      "tags": [
+        "Freelance",
+        "Web Design",
+        "Domain Setup",
+        "Client Work"
+      ],
+      "path": "./public/content/projects/vairo-performance-website.md"
     },
     {
       "title": "Lines Police CAD",
@@ -86,7 +118,12 @@
       "demo": "https://www.linespolice-cad.com/",
       "featured": false,
       "order": 5,
-      "tags": ["Node.js", "Express", "MongoDB", "Web App"],
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Web App"
+      ],
       "path": "./public/content/projects/lines-police-cad.md"
     },
     {
@@ -101,23 +138,13 @@
       "demo": null,
       "featured": false,
       "order": 6,
-      "tags": ["HTML", "CSS", "JavaScript", "Portfolio"],
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Portfolio"
+      ],
       "path": "./public/content/projects/portfolio.md"
-    },
-    {
-      "title": "Vairo Performance Website",
-      "slug": "vairo-performance-website",
-      "type": "projects",
-      "summary": "A freelance website project for Vairo Performance, including site design, content structure, domain setup, and launch support for a professional online presence.",
-      "label": "Project",
-      "date": "2026-03-01",
-      "status": "Client Work",
-      "github": null,
-      "demo": "https://vairo-performance.com",
-      "featured": false,
-      "order": 7,
-      "tags": ["Freelance", "Web Design", "Domain Setup", "Client Work"],
-      "path": "./public/content/projects/vairo-performance-website.md"
     },
     {
       "title": "School Management API",
@@ -130,8 +157,13 @@
       "github": "https://git.sowinski.dev/SowinskiBraeden/school-management-api",
       "demo": null,
       "featured": false,
-      "order": 8,
-      "tags": ["Go", "API", "Documentation", "Education Tech"],
+      "order": 7,
+      "tags": [
+        "Go",
+        "API",
+        "Documentation",
+        "Education Tech"
+      ],
       "path": "./public/content/projects/school-management-api.md"
     },
     {
@@ -145,42 +177,16 @@
       "github": "https://git.sowinski.dev/SowinskiBraeden/XP-System",
       "demo": null,
       "featured": false,
-      "order": 9,
-      "tags": ["Web App", "Education Tech", "Gamification"],
+      "order": 8,
+      "tags": [
+        "Web App",
+        "Education Tech",
+        "Gamification"
+      ],
       "path": "./public/content/projects/xp-system.md"
     }
   ],
   "updates": [
-    {
-      "title": "3rd Place at the inaugural Red Team Hackathon",
-      "slug": "red-team-hackathon-2026",
-      "type": "updates",
-      "summary": "Team Cerberus Gate earned a third-place finish while building a prototype focused on RF signal classification, modulation analysis, and emitter geolocation.",
-      "label": "Update",
-      "date": "2026-03-12",
-      "status": "Achievement",
-      "github": null,
-      "demo": null,
-      "featured": true,
-      "order": 2,
-      "tags": ["Hackathon", "RF", "Machine Learning", "Geolocation", "BCIT"],
-      "path": "./public/content/updates/red-team-hackathon-2026.md"
-    },
-    {
-      "title": "Joined the BCIT Computing Club as an Executive Member",
-      "slug": "joined-bcit-computing-club",
-      "type": "updates",
-      "summary": "After helping friends and existing executives of the BCIT Computing Club, I officially joined to help represent and support events such as review sessions and hackathons.",
-      "label": "Update",
-      "date": "2025-12-24",
-      "status": "New Role",
-      "github": null,
-      "demo": null,
-      "featured": true,
-      "order": 3,
-      "tags": ["Computing Club", "Executive Member", "BCIT"],
-      "path": "./public/content/updates/joined-bcit-computing-club.md"
-    },
     {
       "title": "Appointed President of Coding 4 All (C4A)",
       "slug": "appointed-president-c4a",
@@ -193,8 +199,54 @@
       "demo": null,
       "featured": true,
       "order": 1,
-      "tags": ["Leadership", "BCIT", "Community", "C4A"],
+      "tags": [
+        "Leadership",
+        "BCIT",
+        "Community",
+        "C4A"
+      ],
       "path": "./public/content/updates/appointed-president-c4a.md"
+    },
+    {
+      "title": "3rd Place at the inaugural Red Team Hackathon",
+      "slug": "red-team-hackathon-2026",
+      "type": "updates",
+      "summary": "Team Cerberus Gate earned a third-place finish for Find My Force, a prototype that classified RF signals, grouped related receiver readings, and estimated emitter locations using geolocation services.",
+      "label": "Update",
+      "date": "2026-03-12",
+      "status": "Achievement",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "order": 2,
+      "tags": [
+        "Hackathon",
+        "RF",
+        "Machine Learning",
+        "Geolocation",
+        "BCIT"
+      ],
+      "path": "./public/content/updates/red-team-hackathon-2026.md"
+    },
+    {
+      "title": "Joined the BCIT Computing Club and Coding 4 All as an Executive Member",
+      "slug": "joined-bcit-computing-club",
+      "type": "updates",
+      "summary": "After helping friends and existing executives with club events and student support, I officially joined the BCIT Computing Club and Coding 4 All to help represent and support events such as review sessions, hackathons, and other computing initiatives.",
+      "label": "Update",
+      "date": "2025-12-24",
+      "status": "New Role",
+      "github": null,
+      "demo": null,
+      "featured": true,
+      "order": 3,
+      "tags": [
+        "Computing Club",
+        "Coding 4 All",
+        "Executive Member",
+        "BCIT"
+      ],
+      "path": "./public/content/updates/joined-bcit-computing-club.md"
     }
   ]
 }

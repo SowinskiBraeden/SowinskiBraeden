@@ -1,45 +1,57 @@
 ---
-title: Reforger Mods API
+title: ReforgerMods.net
 slug: reforger-mods-api
-summary: A public, unofficial REST API for Arma Reforger Workshop metadata, built with caching, background refresh jobs, rate limiting, and production reliability in mind.
+summary: An API and data platform for the Arma Reforger ecosystem. I built and operate a production API handling 100K+ requests a day, with API key auth, rate limiting, caching, monitoring, third-party integrations, and paying customers.
 label: Project
 date: 2026-07-06
 status: Active
 featured: true
 order: 1
-github: https://github.com/SowinskiBraeden/ReforgerWorkshopAPI
-live: https://api.reforgermods.net
-tags: Go, REST API, Web Scraping, Observability, Documentation
+demo: https://reforgermods.net
+tags: Go, REST API, Caching, Rate Limiting, Stripe, Cloudflare, Linux
 ---
 
 ## Overview
 
-The Arma Reforger Workshop is primarily a website, not a developer API. Panels, hosting tools, bots, and dashboards that need structured mod data have no clean way to get it. I built Reforger Mods API to fill that gap.
+The Arma Reforger Workshop doesn't give developers a real API, so anyone building a hosting panel, bot, or dashboard around mod data has had to scrape pages themselves. I built ReforgerMods.net to fix that: a public API and data platform for the Reforger ecosystem, live at [reforgermods.net](https://reforgermods.net).
 
-It is a public REST API, live at [api.reforgermods.net](https://api.reforgermods.net), that fetches and normalizes Workshop metadata into predictable, documented responses for developers. After the most recent relaunch, it started receiving identified traffic from third-party, which makes it one of the first projects I have built that is genuinely used beyond my own stack.
+It started as a small Workshop metadata scraper. It has since grown into a production service with third-party developers and communities depending on it, plus paying customers on top of the free tier. The API handles 100K+ requests a day.
 
 ## What It Does
 
-- Search and list Workshop mods with structured, filterable responses
-- Retrieve detailed mod metadata normalized from raw Workshop pages
-- Cache responses to avoid hammering upstream on repeated lookups
-- Serve stale data while background refresh jobs revalidate it
-- Return `202 Accepted` on cold cache misses so consumers are not blocked waiting on a full upstream scrape
+The core is a REST API written in Go (`/v2`, with `/v1` still running for existing integrations) covering:
 
-## Reliability and API Design
+- Searching and listing Workshop mods, with filtering, sorting, and pagination
+- Mod detail lookups, including dependencies and version history
+- Server discovery and per-server detail, refreshed roughly every minute
+- Population history and other ecosystem data
 
-A scraper-backed API has an obvious weak point: if the upstream source is slow or flaky, every request suffers. I treated reliability as a first-class concern from the start.
+Full docs, including endpoint references and rate limits, are at [reforgermods.net/api](https://reforgermods.net/api).
 
-Cached responses return fast. When data is stale, it gets served immediately while a refresh job runs in the background. On a cold miss, the API returns `202 Accepted` with a job reference instead of making the caller wait. Rate limiting and defensive scraper error handling mean that one bad upstream page does not cascade into a broken API response.
+## Caching and Reliability
 
-Internal metrics track traffic, cache hit rates, refresh job behavior, and errors, so I can actually tell what the service is doing in production rather than guessing.
+A scraper-backed API falls apart if the upstream source is slow, so caching and refresh behavior got real attention early on. Responses are served from cache against a fresh and a stale TTL. Once data goes stale it's still served immediately while a background job refreshes it, instead of making the caller wait on a live scrape. Cold misses kick off an async refresh job and return a `202 Accepted` with a job reference rather than blocking the request.
 
-## Documentation
+Clients get `ETag` support for cheap `304` responses.
 
-The API includes public-facing documentation covering all endpoints, response shapes, cache behavior, and how to handle `202 Accepted` responses correctly. Getting the docs right felt important, if external tools are depending on this, they need to be able to understand it without digging through source code.
+## Auth, Rate Limiting, and Tiers
 
-Live API and docs: [api.reforgermods.net](https://api.reforgermods.net)
+Requests authenticate with API keys, and rate limits are enforced per key. Free, Developer, and Pro tiers each get their own request budget, so the bots, panels, and hosting tools built on top of the API get a higher ceiling as they move up. Paid tiers are handled through Stripe.
+
+## Production and Infrastructure
+
+I run the whole stack myself: Linux VPS administration, systemd services, Caddy as a reverse proxy, Cloudflare in front, and Docker where it makes sense. Parts of the platform run on Cloudflare Workers with R2. Uptime Kuma watches service health, fail2ban handles basic hardening, and internal metrics track traffic, cache hit rate, refresh job status, and request origin (country, client, user agent, path, query) so I can actually see what the service is doing instead of guessing.
+
+The site and the API aren't one monolithic app - they're separate pieces that get deployed and updated independently.
+
+## The Broader Platform
+
+What started as a Workshop API has grown into more of a platform: server indexing, mod/server relationship data, deployment stats, and a handful of admin tools (config generation, dependency checking, hosting calculators). There's also a [desktop launcher](https://github.com/SowinskiBraeden/reforgermods-launcher) for Arma Reforger.
+
+Underneath that sits a separate analytics pipeline: a Go indexer backed by SQLite, and an OCaml worker that handles periodic aggregation - historical server and mod data, exposure and deployment calculations, dependency relationships - then publishes it atomically for the API to read. It runs on systemd timers rather than anything fancier.
+
+One of those aggregation queries got slow enough to notice: a dependency-relationship calculation was taking about 12 minutes per run. The cause was a SQL expression that quietly stopped the index I expected to be used from being used at all. Rewriting it to keep the index in play brought that part of the run down to about 2 seconds.
 
 ## Notes
 
-This project sits at the intersection of a few things I am consistently interested in: backend infrastructure, reliability engineering, and practical tooling for game communities. It is also the first project where I have had to think seriously about backwards compatibility and defensive API design — once external consumers exist, breaking changes have real consequences. That constraint pushed me to build it more carefully than I would have if it were purely internal.
+This is the project where I've had to think seriously about what it means to run production software other people depend on - uptime, backwards compatibility, and the fact that breaking changes now have real consequences for people who didn't write the code. It's also the first time I've had actual paying customers for something I built, which changes how carefully I think about reliability and support.
